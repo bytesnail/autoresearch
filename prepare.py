@@ -6,7 +6,7 @@ Usage:
     python prepare.py                  # full prep (download + tokenizer)
     python prepare.py --num-shards 8   # download only 8 shards (for testing)
 
-Data and tokenizer are stored in ~/.cache/autoresearch/.
+Data and tokenizer are stored in $AUTORESEARCH_CACHE_DIR (default: ~/.cache/autoresearch/).
 """
 
 import os
