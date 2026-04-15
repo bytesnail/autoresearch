@@ -693,7 +693,7 @@ def get_muon_momentum(step):
 
 
 def get_weight_decay(progress):
-    return WEIGHT_DECAY * (1 - progress)
+    return WEIGHT_DECAY
 
 
 # ---------------------------------------------------------------------------
