@@ -591,7 +591,7 @@ TOTAL_BATCH_SIZE = (
 )  # ~524K tokens (Ampere+), ~65K tokens (pre-Ampere)
 EMBEDDING_LR = 0.6  # learning rate for token embeddings (Adam)
 UNEMBEDDING_LR = 0.004  # learning rate for lm_head (Adam)
-MATRIX_LR = 0.04
+MATRIX_LR = 0.038
 SCALAR_LR = 0.3
 WEIGHT_DECAY = 0.06
 ADAM_BETAS = (0.8, 0.95)  # Adam beta1, beta2
