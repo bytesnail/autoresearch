@@ -445,7 +445,7 @@ def muon_step_fused(
         if torch.cuda.is_available() and torch.cuda.get_device_capability() >= (8, 0)
         else g.half()
     )
-    X = X / (X.norm(dim=(-2, -1), keepdim=True) * 1.05 + 1e-6)
+    X = X / (X.norm(dim=(-2, -1), keepdim=True) * 1.06 + 1e-6)
     if g.size(-2) > g.size(-1):
         for a, b, c in polar_express_coeffs[:ns_steps]:
             A = X.mT @ X
