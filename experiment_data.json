@@ -1,0 +1,6653 @@
+{
+  "meta": {
+    "total_experiments": 334,
+    "baseline_val_bpb": 1.260177,
+    "best_val_bpb": 1.218771,
+    "improvement_pct": 3.2857,
+    "improved": 40,
+    "worse": 289,
+    "crashes": 5,
+    "start_date": "2026-04-16 02:05:12",
+    "end_date": "2026-04-17 20:58:08",
+    "duration": "1 天 18 小时 52 分钟"
+  },
+  "progress": [
+    {
+      "index": 0,
+      "running_best": 1.260177,
+      "improvement_pct": 0.0
+    },
+    {
+      "index": 1,
+      "running_best": 1.260177,
+      "improvement_pct": 0.0
+    },
+    {
+      "index": 2,
+      "running_best": 1.260177,
+      "improvement_pct": 0.0
+    },
+    {
+      "index": 3,
+      "running_best": 1.260177,
+      "improvement_pct": 0.0
+    },
+    {
+      "index": 4,
+      "running_best": 1.260177,
+      "improvement_pct": 0.0
+    },
+    {
+      "index": 5,
+      "running_best": 1.260177,
+      "improvement_pct": 0.0
+    },
+    {
+      "index": 6,
+      "running_best": 1.259584,
+      "improvement_pct": 0.0471
+    },
+    {
+      "index": 7,
+      "running_best": 1.259584,
+      "improvement_pct": 0.0471
+    },
+    {
+      "index": 8,
+      "running_best": 1.255426,
+      "improvement_pct": 0.377
+    },
+    {
+      "index": 9,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 10,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 11,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 12,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 13,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 14,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 15,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 16,
+      "running_best": 1.255046,
+      "improvement_pct": 0.4072
+    },
+    {
+      "index": 17,
+      "running_best": 1.253775,
+      "improvement_pct": 0.508
+    },
+    {
+      "index": 18,
+      "running_best": 1.253775,
+      "improvement_pct": 0.508
+    },
+    {
+      "index": 19,
+      "running_best": 1.253775,
+      "improvement_pct": 0.508
+    },
+    {
+      "index": 20,
+      "running_best": 1.253775,
+      "improvement_pct": 0.508
+    },
+    {
+      "index": 21,
+      "running_best": 1.253775,
+      "improvement_pct": 0.508
+    },
+    {
+      "index": 22,
+      "running_best": 1.253775,
+      "improvement_pct": 0.508
+    },
+    {
+      "index": 23,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 24,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 25,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 26,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 27,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 28,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 29,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 30,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 31,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 32,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 33,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 34,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 35,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 36,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 37,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 38,
+      "running_best": 1.249351,
+      "improvement_pct": 0.8591
+    },
+    {
+      "index": 39,
+      "running_best": 1.245145,
+      "improvement_pct": 1.1928
+    },
+    {
+      "index": 40,
+      "running_best": 1.243264,
+      "improvement_pct": 1.3421
+    },
+    {
+      "index": 41,
+      "running_best": 1.243264,
+      "improvement_pct": 1.3421
+    },
+    {
+      "index": 42,
+      "running_best": 1.242762,
+      "improvement_pct": 1.3819
+    },
+    {
+      "index": 43,
+      "running_best": 1.242762,
+      "improvement_pct": 1.3819
+    },
+    {
+      "index": 44,
+      "running_best": 1.242762,
+      "improvement_pct": 1.3819
+    },
+    {
+      "index": 45,
+      "running_best": 1.242762,
+      "improvement_pct": 1.3819
+    },
+    {
+      "index": 46,
+      "running_best": 1.242762,
+      "improvement_pct": 1.3819
+    },
+    {
+      "index": 47,
+      "running_best": 1.242762,
+      "improvement_pct": 1.3819
+    },
+    {
+      "index": 48,
+      "running_best": 1.242762,
+      "improvement_pct": 1.3819
+    },
+    {
+      "index": 49,
+      "running_best": 1.242125,
+      "improvement_pct": 1.4325
+    },
+    {
+      "index": 50,
+      "running_best": 1.242125,
+      "improvement_pct": 1.4325
+    },
+    {
+      "index": 51,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 52,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 53,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 54,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 55,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 56,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 57,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 58,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 59,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 60,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 61,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 62,
+      "running_best": 1.241935,
+      "improvement_pct": 1.4476
+    },
+    {
+      "index": 63,
+      "running_best": 1.24182,
+      "improvement_pct": 1.4567
+    },
+    {
+      "index": 64,
+      "running_best": 1.24182,
+      "improvement_pct": 1.4567
+    },
+    {
+      "index": 65,
+      "running_best": 1.24182,
+      "improvement_pct": 1.4567
+    },
+    {
+      "index": 66,
+      "running_best": 1.24161,
+      "improvement_pct": 1.4734
+    },
+    {
+      "index": 67,
+      "running_best": 1.240961,
+      "improvement_pct": 1.5249
+    },
+    {
+      "index": 68,
+      "running_best": 1.240961,
+      "improvement_pct": 1.5249
+    },
+    {
+      "index": 69,
+      "running_best": 1.240961,
+      "improvement_pct": 1.5249
+    },
+    {
+      "index": 70,
+      "running_best": 1.240961,
+      "improvement_pct": 1.5249
+    },
+    {
+      "index": 71,
+      "running_best": 1.240961,
+      "improvement_pct": 1.5249
+    },
+    {
+      "index": 72,
+      "running_best": 1.240961,
+      "improvement_pct": 1.5249
+    },
+    {
+      "index": 73,
+      "running_best": 1.240961,
+      "improvement_pct": 1.5249
+    },
+    {
+      "index": 74,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 75,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 76,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 77,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 78,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 79,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 80,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 81,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 82,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 83,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 84,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 85,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 86,
+      "running_best": 1.239629,
+      "improvement_pct": 1.6306
+    },
+    {
+      "index": 87,
+      "running_best": 1.239233,
+      "improvement_pct": 1.662
+    },
+    {
+      "index": 88,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 89,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 90,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 91,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 92,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 93,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 94,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 95,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 96,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 97,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 98,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 99,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 100,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 101,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 102,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 103,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 104,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 105,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 106,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 107,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 108,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 109,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 110,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 111,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 112,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 113,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 114,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 115,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 116,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 117,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 118,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 119,
+      "running_best": 1.238607,
+      "improvement_pct": 1.7117
+    },
+    {
+      "index": 120,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 121,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 122,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 123,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 124,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 125,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 126,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 127,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 128,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 129,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 130,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 131,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 132,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 133,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 134,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 135,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 136,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 137,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 138,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 139,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 140,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 141,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 142,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 143,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 144,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 145,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 146,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 147,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 148,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 149,
+      "running_best": 1.237766,
+      "improvement_pct": 1.7784
+    },
+    {
+      "index": 150,
+      "running_best": 1.237623,
+      "improvement_pct": 1.7897
+    },
+    {
+      "index": 151,
+      "running_best": 1.237146,
+      "improvement_pct": 1.8276
+    },
+    {
+      "index": 152,
+      "running_best": 1.236925,
+      "improvement_pct": 1.8451
+    },
+    {
+      "index": 153,
+      "running_best": 1.235304,
+      "improvement_pct": 1.9738
+    },
+    {
+      "index": 154,
+      "running_best": 1.235127,
+      "improvement_pct": 1.9878
+    },
+    {
+      "index": 155,
+      "running_best": 1.234749,
+      "improvement_pct": 2.0178
+    },
+    {
+      "index": 156,
+      "running_best": 1.234749,
+      "improvement_pct": 2.0178
+    },
+    {
+      "index": 157,
+      "running_best": 1.232849,
+      "improvement_pct": 2.1686
+    },
+    {
+      "index": 158,
+      "running_best": 1.231944,
+      "improvement_pct": 2.2404
+    },
+    {
+      "index": 159,
+      "running_best": 1.231944,
+      "improvement_pct": 2.2404
+    },
+    {
+      "index": 160,
+      "running_best": 1.229592,
+      "improvement_pct": 2.427
+    },
+    {
+      "index": 161,
+      "running_best": 1.22895,
+      "improvement_pct": 2.478
+    },
+    {
+      "index": 162,
+      "running_best": 1.22895,
+      "improvement_pct": 2.478
+    },
+    {
+      "index": 163,
+      "running_best": 1.226249,
+      "improvement_pct": 2.6923
+    },
+    {
+      "index": 164,
+      "running_best": 1.226249,
+      "improvement_pct": 2.6923
+    },
+    {
+      "index": 165,
+      "running_best": 1.224898,
+      "improvement_pct": 2.7995
+    },
+    {
+      "index": 166,
+      "running_best": 1.223458,
+      "improvement_pct": 2.9138
+    },
+    {
+      "index": 167,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 168,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 169,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 170,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 171,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 172,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 173,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 174,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 175,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 176,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 177,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 178,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 179,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 180,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 181,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 182,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 183,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 184,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 185,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 186,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 187,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 188,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 189,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 190,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 191,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 192,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 193,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 194,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 195,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 196,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 197,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 198,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 199,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 200,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 201,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 202,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 203,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 204,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 205,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 206,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 207,
+      "running_best": 1.222043,
+      "improvement_pct": 3.0261
+    },
+    {
+      "index": 208,
+      "running_best": 1.221922,
+      "improvement_pct": 3.0357
+    },
+    {
+      "index": 209,
+      "running_best": 1.221922,
+      "improvement_pct": 3.0357
+    },
+    {
+      "index": 210,
+      "running_best": 1.221922,
+      "improvement_pct": 3.0357
+    },
+    {
+      "index": 211,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 212,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 213,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 214,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 215,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 216,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 217,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 218,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 219,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 220,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 221,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 222,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 223,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 224,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 225,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 226,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 227,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 228,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 229,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 230,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 231,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 232,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 233,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 234,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 235,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 236,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 237,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 238,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 239,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 240,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 241,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 242,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 243,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 244,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 245,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 246,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 247,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 248,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 249,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 250,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 251,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 252,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 253,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 254,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 255,
+      "running_best": 1.221845,
+      "improvement_pct": 3.0418
+    },
+    {
+      "index": 256,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 257,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 258,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 259,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 260,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 261,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 262,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 263,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 264,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 265,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 266,
+      "running_best": 1.221516,
+      "improvement_pct": 3.0679
+    },
+    {
+      "index": 267,
+      "running_best": 1.220934,
+      "improvement_pct": 3.1141
+    },
+    {
+      "index": 268,
+      "running_best": 1.220934,
+      "improvement_pct": 3.1141
+    },
+    {
+      "index": 269,
+      "running_best": 1.220934,
+      "improvement_pct": 3.1141
+    },
+    {
+      "index": 270,
+      "running_best": 1.220934,
+      "improvement_pct": 3.1141
+    },
+    {
+      "index": 271,
+      "running_best": 1.220934,
+      "improvement_pct": 3.1141
+    },
+    {
+      "index": 272,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 273,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 274,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 275,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 276,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 277,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 278,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 279,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 280,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 281,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 282,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 283,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 284,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 285,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 286,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 287,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 288,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 289,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 290,
+      "running_best": 1.219684,
+      "improvement_pct": 3.2133
+    },
+    {
+      "index": 291,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 292,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 293,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 294,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 295,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 296,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 297,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 298,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 299,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 300,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 301,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 302,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 303,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 304,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 305,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 306,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 307,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 308,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 309,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 310,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 311,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 312,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 313,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 314,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 315,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 316,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 317,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 318,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 319,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 320,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 321,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 322,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 323,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 324,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 325,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 326,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 327,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 328,
+      "running_best": 1.219433,
+      "improvement_pct": 3.2332
+    },
+    {
+      "index": 329,
+      "running_best": 1.219251,
+      "improvement_pct": 3.2476
+    },
+    {
+      "index": 330,
+      "running_best": 1.219251,
+      "improvement_pct": 3.2476
+    },
+    {
+      "index": 331,
+      "running_best": 1.219251,
+      "improvement_pct": 3.2476
+    },
+    {
+      "index": 332,
+      "running_best": 1.218771,
+      "improvement_pct": 3.2857
+    },
+    {
+      "index": 333,
+      "running_best": 1.218771,
+      "improvement_pct": 3.2857
+    }
+  ],
+  "categories": {
+    "Weight Decay": {
+      "total": 47,
+      "improved": 9,
+      "worse": 38,
+      "crash": 0,
+      "new_best": 9,
+      "success_rate": 19.1
+    },
+    "Optimizer (Muon)": {
+      "total": 37,
+      "improved": 5,
+      "worse": 32,
+      "crash": 0,
+      "new_best": 5,
+      "success_rate": 13.5
+    },
+    "Learning Rate (Matrix)": {
+      "total": 34,
+      "improved": 6,
+      "worse": 28,
+      "crash": 0,
+      "new_best": 6,
+      "success_rate": 17.6
+    },
+    "Learning Rate (Embedding)": {
+      "total": 33,
+      "improved": 0,
+      "worse": 33,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "Learning Rate (Other)": {
+      "total": 28,
+      "improved": 5,
+      "worse": 23,
+      "crash": 0,
+      "new_best": 5,
+      "success_rate": 17.9
+    },
+    "Optimizer (Adam)": {
+      "total": 24,
+      "improved": 0,
+      "worse": 24,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "Architecture": {
+      "total": 20,
+      "improved": 1,
+      "worse": 18,
+      "crash": 1,
+      "new_best": 1,
+      "success_rate": 5.0
+    },
+    "Initialization": {
+      "total": 20,
+      "improved": 0,
+      "worse": 20,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "LR Schedule": {
+      "total": 19,
+      "improved": 0,
+      "worse": 19,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "Learning Rate (Scalar)": {
+      "total": 19,
+      "improved": 3,
+      "worse": 16,
+      "crash": 0,
+      "new_best": 3,
+      "success_rate": 15.8
+    },
+    "Softcap (Attention)": {
+      "total": 15,
+      "improved": 6,
+      "worse": 9,
+      "crash": 0,
+      "new_best": 6,
+      "success_rate": 40.0
+    },
+    "Value Embedding": {
+      "total": 9,
+      "improved": 0,
+      "worse": 7,
+      "crash": 2,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "Normalization": {
+      "total": 8,
+      "improved": 3,
+      "worse": 5,
+      "crash": 0,
+      "new_best": 3,
+      "success_rate": 37.5
+    },
+    "Batch Size": {
+      "total": 7,
+      "improved": 0,
+      "worse": 7,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "RoPE": {
+      "total": 5,
+      "improved": 0,
+      "worse": 5,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "Weight Tying": {
+      "total": 4,
+      "improved": 1,
+      "worse": 1,
+      "crash": 2,
+      "new_best": 1,
+      "success_rate": 25.0
+    },
+    "Regularization": {
+      "total": 3,
+      "improved": 0,
+      "worse": 3,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    },
+    "Baseline": {
+      "total": 1,
+      "improved": 1,
+      "worse": 0,
+      "crash": 0,
+      "new_best": 1,
+      "success_rate": 100.0
+    },
+    "Other": {
+      "total": 1,
+      "improved": 0,
+      "worse": 1,
+      "crash": 0,
+      "new_best": 0,
+      "success_rate": 0.0
+    }
+  },
+  "phases": {
+    "Phase 1: Initial Exploration": {
+      "total": 9,
+      "improved": 3,
+      "worse": 6,
+      "crash": 0,
+      "success_rate": 33.3,
+      "best_val_bpb": 1.255426
+    },
+    "Phase 2: Foundational HP Search": {
+      "total": 34,
+      "improved": 6,
+      "worse": 27,
+      "crash": 1,
+      "success_rate": 17.6,
+      "best_val_bpb": 1.242762
+    },
+    "Phase 3: Momentum & WD Optimization": {
+      "total": 26,
+      "improved": 5,
+      "worse": 21,
+      "crash": 0,
+      "success_rate": 19.2,
+      "best_val_bpb": 1.240961
+    },
+    "Phase 4: Fine-Grained Grid Search": {
+      "total": 53,
+      "improved": 4,
+      "worse": 48,
+      "crash": 1,
+      "success_rate": 7.5,
+      "best_val_bpb": 1.237766
+    },
+    "Phase 5: Weight Tying": {
+      "total": 10,
+      "improved": 0,
+      "worse": 10,
+      "crash": 0,
+      "success_rate": 0.0,
+      "best_val_bpb": 1.237927
+    },
+    "Phase 6: QK Norm & Softcap Deep Dive": {
+      "total": 22,
+      "improved": 4,
+      "worse": 17,
+      "crash": 1,
+      "success_rate": 18.2,
+      "best_val_bpb": 1.235304
+    },
+    "Phase 7: Systematic Re-testing": {
+      "total": 54,
+      "improved": 10,
+      "worse": 43,
+      "crash": 1,
+      "success_rate": 18.5,
+      "best_val_bpb": 1.222043
+    },
+    "Phase 8: Advanced Techniques": {
+      "total": 48,
+      "improved": 2,
+      "worse": 45,
+      "crash": 1,
+      "success_rate": 4.2,
+      "best_val_bpb": 1.221845
+    },
+    "Phase 9: WD Scheduling Discovery": {
+      "total": 17,
+      "improved": 3,
+      "worse": 14,
+      "crash": 0,
+      "success_rate": 17.6,
+      "best_val_bpb": 1.219684
+    },
+    "Phase 10: Final Optimization": {
+      "total": 61,
+      "improved": 3,
+      "worse": 58,
+      "crash": 0,
+      "success_rate": 4.9,
+      "best_val_bpb": 1.218771
+    }
+  },
+  "lr_sensitivity": {
+    "matrix_lr": [
+      {
+        "value": 3.0,
+        "val_bpb": 1.25497,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.242762,
+        "is_best": true
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.273772,
+        "is_best": false
+      },
+      {
+        "value": 33.0,
+        "val_bpb": 1.244823,
+        "is_best": false
+      },
+      {
+        "value": 34.0,
+        "val_bpb": 1.244693,
+        "is_best": false
+      },
+      {
+        "value": 35.0,
+        "val_bpb": 1.253775,
+        "is_best": true
+      },
+      {
+        "value": 35.0,
+        "val_bpb": 1.244683,
+        "is_best": false
+      },
+      {
+        "value": 35.0,
+        "val_bpb": 1.24231,
+        "is_best": false
+      },
+      {
+        "value": 36.0,
+        "val_bpb": 1.238607,
+        "is_best": true
+      },
+      {
+        "value": 36.0,
+        "val_bpb": 1.237807,
+        "is_best": false
+      },
+      {
+        "value": 36.0,
+        "val_bpb": 1.232849,
+        "is_best": true
+      },
+      {
+        "value": 37.0,
+        "val_bpb": 1.239378,
+        "is_best": false
+      },
+      {
+        "value": 38.0,
+        "val_bpb": 1.239233,
+        "is_best": true
+      },
+      {
+        "value": 38.0,
+        "val_bpb": 1.231944,
+        "is_best": true
+      },
+      {
+        "value": 39.0,
+        "val_bpb": 1.232178,
+        "is_best": false
+      },
+      {
+        "value": 39.0,
+        "val_bpb": 1.219798,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.232326,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.226102,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.232273,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.222131,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.222911,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.222005,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.220206,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.222714,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.219837,
+        "is_best": false
+      },
+      {
+        "value": 40.0,
+        "val_bpb": 1.221088,
+        "is_best": false
+      },
+      {
+        "value": 41.0,
+        "val_bpb": 1.229677,
+        "is_best": false
+      },
+      {
+        "value": 41.0,
+        "val_bpb": 1.220483,
+        "is_best": false
+      },
+      {
+        "value": 42.0,
+        "val_bpb": 1.227072,
+        "is_best": false
+      },
+      {
+        "value": 45.0,
+        "val_bpb": 1.245843,
+        "is_best": false
+      },
+      {
+        "value": 45.0,
+        "val_bpb": 1.246554,
+        "is_best": false
+      }
+    ],
+    "scalar_lr": [
+      {
+        "value": 2.0,
+        "val_bpb": 1.253984,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.245596,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.22996,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.233348,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.227086,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.225812,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.222379,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.220936,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.224417,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.2211,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.219475,
+        "is_best": false
+      },
+      {
+        "value": 3.0,
+        "val_bpb": 1.249351,
+        "is_best": true
+      },
+      {
+        "value": 3.0,
+        "val_bpb": 1.229592,
+        "is_best": true
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.252816,
+        "is_best": false
+      },
+      {
+        "value": 18.0,
+        "val_bpb": 1.229677,
+        "is_best": false
+      },
+      {
+        "value": 19.0,
+        "val_bpb": 1.220483,
+        "is_best": false
+      },
+      {
+        "value": 25.0,
+        "val_bpb": 1.244824,
+        "is_best": false
+      },
+      {
+        "value": 25.0,
+        "val_bpb": 1.243278,
+        "is_best": false
+      },
+      {
+        "value": 25.0,
+        "val_bpb": 1.22895,
+        "is_best": true
+      },
+      {
+        "value": 28.0,
+        "val_bpb": 1.241704,
+        "is_best": false
+      },
+      {
+        "value": 35.0,
+        "val_bpb": 1.241238,
+        "is_best": false
+      }
+    ],
+    "embedding_lr": [
+      {
+        "value": 3.0,
+        "val_bpb": 1.261237,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.244864,
+        "is_best": false
+      },
+      {
+        "value": 5.0,
+        "val_bpb": 1.241973,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.24369,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.247631,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.230038,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.224256,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.226115,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.231227,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.223996,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.220034,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.222355,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.220773,
+        "is_best": false
+      },
+      {
+        "value": 7.0,
+        "val_bpb": 1.243457,
+        "is_best": false
+      },
+      {
+        "value": 7.0,
+        "val_bpb": 1.245088,
+        "is_best": false
+      },
+      {
+        "value": 8.0,
+        "val_bpb": 1.251062,
+        "is_best": false
+      },
+      {
+        "value": 8.0,
+        "val_bpb": 1.244032,
+        "is_best": false
+      },
+      {
+        "value": 65.0,
+        "val_bpb": 1.219798,
+        "is_best": false
+      }
+    ],
+    "unembedding_lr": [
+      {
+        "value": 1.0,
+        "val_bpb": 1.265636,
+        "is_best": false
+      },
+      {
+        "value": 2.0,
+        "val_bpb": 1.259332,
+        "is_best": false
+      },
+      {
+        "value": 3.0,
+        "val_bpb": 1.243909,
+        "is_best": false
+      },
+      {
+        "value": 3.0,
+        "val_bpb": 1.244019,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.248466,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.247874,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.224407,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.231697,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.228213,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.222881,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.227813,
+        "is_best": false
+      },
+      {
+        "value": 4.0,
+        "val_bpb": 1.222361,
+        "is_best": false
+      },
+      {
+        "value": 5.0,
+        "val_bpb": 1.246843,
+        "is_best": false
+      },
+      {
+        "value": 5.0,
+        "val_bpb": 1.243773,
+        "is_best": false
+      },
+      {
+        "value": 5.0,
+        "val_bpb": 1.223822,
+        "is_best": false
+      },
+      {
+        "value": 6.0,
+        "val_bpb": 1.24704,
+        "is_best": false
+      }
+    ]
+  },
+  "weight_decay": [
+    {
+      "value": 0.0,
+      "val_bpb": 1.257436,
+      "is_best": false
+    },
+    {
+      "value": 0.01,
+      "val_bpb": 1.250099,
+      "is_best": false
+    },
+    {
+      "value": 0.03,
+      "val_bpb": 1.243179,
+      "is_best": false
+    },
+    {
+      "value": 0.04,
+      "val_bpb": 1.247402,
+      "is_best": false
+    },
+    {
+      "value": 0.05,
+      "val_bpb": 1.255046,
+      "is_best": true
+    },
+    {
+      "value": 0.05,
+      "val_bpb": 1.220813,
+      "is_best": false
+    },
+    {
+      "value": 0.05,
+      "val_bpb": 1.223222,
+      "is_best": false
+    },
+    {
+      "value": 0.055,
+      "val_bpb": 1.239735,
+      "is_best": false
+    },
+    {
+      "value": 0.055,
+      "val_bpb": 1.241909,
+      "is_best": false
+    },
+    {
+      "value": 0.055,
+      "val_bpb": 1.237927,
+      "is_best": false
+    },
+    {
+      "value": 0.055,
+      "val_bpb": 1.232178,
+      "is_best": false
+    },
+    {
+      "value": 0.06,
+      "val_bpb": 1.241935,
+      "is_best": true
+    },
+    {
+      "value": 0.065,
+      "val_bpb": 1.242022,
+      "is_best": false
+    },
+    {
+      "value": 0.07,
+      "val_bpb": 1.243061,
+      "is_best": false
+    },
+    {
+      "value": 0.07,
+      "val_bpb": 1.242362,
+      "is_best": false
+    },
+    {
+      "value": 0.075,
+      "val_bpb": 1.251661,
+      "is_best": false
+    },
+    {
+      "value": 0.1,
+      "val_bpb": 1.255426,
+      "is_best": true
+    }
+  ],
+  "softcap": [
+    {
+      "value": 8.0,
+      "val_bpb": 1.236925,
+      "is_best": true
+    },
+    {
+      "value": 8.0,
+      "val_bpb": 1.230133,
+      "is_best": false
+    },
+    {
+      "value": 8.0,
+      "val_bpb": 1.222326,
+      "is_best": false
+    },
+    {
+      "value": 8.0,
+      "val_bpb": 1.226134,
+      "is_best": false
+    },
+    {
+      "value": 8.0,
+      "val_bpb": 1.220934,
+      "is_best": true
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.234749,
+      "is_best": true
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.224494,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.222881,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.223483,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.22179,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.219684,
+      "is_best": true
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.220206,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.220936,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.222083,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.220407,
+      "is_best": false
+    },
+    {
+      "value": 9.0,
+      "val_bpb": 1.221498,
+      "is_best": false
+    },
+    {
+      "value": 10.0,
+      "val_bpb": 1.244396,
+      "is_best": false
+    },
+    {
+      "value": 10.0,
+      "val_bpb": 1.235127,
+      "is_best": true
+    },
+    {
+      "value": 11.0,
+      "val_bpb": 1.24183,
+      "is_best": false
+    },
+    {
+      "value": 11.0,
+      "val_bpb": 1.235304,
+      "is_best": true
+    },
+    {
+      "value": 12.0,
+      "val_bpb": 1.239629,
+      "is_best": true
+    },
+    {
+      "value": 12.0,
+      "val_bpb": 1.237146,
+      "is_best": true
+    },
+    {
+      "value": 13.0,
+      "val_bpb": 1.239768,
+      "is_best": false
+    },
+    {
+      "value": 20.0,
+      "val_bpb": 1.25673,
+      "is_best": false
+    },
+    {
+      "value": 20.0,
+      "val_bpb": 1.243804,
+      "is_best": false
+    }
+  ],
+  "momentum": [
+    {
+      "value": 0.8,
+      "val_bpb": 1.244846,
+      "is_best": false
+    },
+    {
+      "value": 0.8,
+      "val_bpb": 1.247338,
+      "is_best": false
+    },
+    {
+      "value": 0.82,
+      "val_bpb": 1.244584,
+      "is_best": false
+    },
+    {
+      "value": 0.84,
+      "val_bpb": 1.220067,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.243359,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.240961,
+      "is_best": true
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.222875,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.234419,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.224358,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.224744,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.236831,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.220935,
+      "is_best": false
+    },
+    {
+      "value": 0.85,
+      "val_bpb": 1.223236,
+      "is_best": false
+    },
+    {
+      "value": 0.86,
+      "val_bpb": 1.24161,
+      "is_best": true
+    },
+    {
+      "value": 0.88,
+      "val_bpb": 1.243264,
+      "is_best": true
+    },
+    {
+      "value": 0.9,
+      "val_bpb": 1.256975,
+      "is_best": false
+    },
+    {
+      "value": 0.9,
+      "val_bpb": 1.245145,
+      "is_best": true
+    }
+  ],
+  "milestones": [
+    {
+      "index": 6,
+      "commit": "e23b26d",
+      "val_bpb": 1.259584,
+      "description": "window pattern L (full attention)",
+      "step_improvement_pct": 0.0471,
+      "total_improvement_pct": 0.0471
+    },
+    {
+      "index": 8,
+      "commit": "36eea7a",
+      "val_bpb": 1.255426,
+      "description": "weight decay 0.1",
+      "step_improvement_pct": 0.3301,
+      "total_improvement_pct": 0.377
+    },
+    {
+      "index": 9,
+      "commit": "81df6eb",
+      "val_bpb": 1.255046,
+      "description": "weight decay 0.05",
+      "step_improvement_pct": 0.0303,
+      "total_improvement_pct": 0.4072
+    },
+    {
+      "index": 17,
+      "commit": "0a56812",
+      "val_bpb": 1.253775,
+      "description": "matrix LR 0.035",
+      "step_improvement_pct": 0.1013,
+      "total_improvement_pct": 0.508
+    },
+    {
+      "index": 23,
+      "commit": "4168040",
+      "val_bpb": 1.249351,
+      "description": "scalar LR 0.3",
+      "step_improvement_pct": 0.3529,
+      "total_improvement_pct": 0.8591
+    },
+    {
+      "index": 39,
+      "commit": "b62d0e1",
+      "val_bpb": 1.245145,
+      "description": "muon momentum end 0.90 (0.85→0.90 ramp)",
+      "step_improvement_pct": 0.3367,
+      "total_improvement_pct": 1.1928
+    },
+    {
+      "index": 40,
+      "commit": "1e81e03",
+      "val_bpb": 1.243264,
+      "description": "muon momentum end 0.88 (0.85→0.88 ramp)",
+      "step_improvement_pct": 0.1511,
+      "total_improvement_pct": 1.3421
+    },
+    {
+      "index": 42,
+      "commit": "5b64e0c",
+      "val_bpb": 1.242762,
+      "description": "matrix LR 0.04 retest with lower momentum - new best!",
+      "step_improvement_pct": 0.0404,
+      "total_improvement_pct": 1.3819
+    },
+    {
+      "index": 49,
+      "commit": "17c037e",
+      "val_bpb": 1.242125,
+      "description": "constant weight decay (no schedule) - new best!",
+      "step_improvement_pct": 0.0513,
+      "total_improvement_pct": 1.4325
+    },
+    {
+      "index": 51,
+      "commit": "f9069da",
+      "val_bpb": 1.241935,
+      "description": "constant WD 0.06 - new best!",
+      "step_improvement_pct": 0.0153,
+      "total_improvement_pct": 1.4476
+    },
+    {
+      "index": 63,
+      "commit": "9f17569",
+      "val_bpb": 1.24182,
+      "description": "FINAL_LR_FRAC=0.1 - new best!",
+      "step_improvement_pct": 0.0093,
+      "total_improvement_pct": 1.4567
+    },
+    {
+      "index": 66,
+      "commit": "db4b1d3",
+      "val_bpb": 1.24161,
+      "description": "momentum end 0.86 - new best!",
+      "step_improvement_pct": 0.0169,
+      "total_improvement_pct": 1.4734
+    },
+    {
+      "index": 67,
+      "commit": "a56e783",
+      "val_bpb": 1.240961,
+      "description": "constant momentum 0.85 - new best!",
+      "step_improvement_pct": 0.0523,
+      "total_improvement_pct": 1.5249
+    },
+    {
+      "index": 74,
+      "commit": "3329b30",
+      "val_bpb": 1.239629,
+      "description": "softcap=12 - new best!",
+      "step_improvement_pct": 0.1073,
+      "total_improvement_pct": 1.6306
+    },
+    {
+      "index": 87,
+      "commit": "0a89dfb",
+      "val_bpb": 1.239233,
+      "description": "MATRIX_LR=0.038 - new best!",
+      "step_improvement_pct": 0.0319,
+      "total_improvement_pct": 1.662
+    },
+    {
+      "index": 88,
+      "commit": "e1d4628",
+      "val_bpb": 1.238607,
+      "description": "MATRIX_LR=0.036 - new best!",
+      "step_improvement_pct": 0.0505,
+      "total_improvement_pct": 1.7117
+    },
+    {
+      "index": 120,
+      "commit": "0dcd569",
+      "val_bpb": 1.237766,
+      "description": "weight tying - new best!",
+      "step_improvement_pct": 0.0679,
+      "total_improvement_pct": 1.7784
+    },
+    {
+      "index": 150,
+      "commit": "e150_no_qk_norm",
+      "val_bpb": 1.237623,
+      "description": "remove QK norm (saves compute)",
+      "step_improvement_pct": 0.0116,
+      "total_improvement_pct": 1.7897
+    },
+    {
+      "index": 151,
+      "commit": "e151_softcap_11_no_qk",
+      "val_bpb": 1.237146,
+      "description": "softcap 12→11 (after removing QK norm)",
+      "step_improvement_pct": 0.0385,
+      "total_improvement_pct": 1.8276
+    },
+    {
+      "index": 152,
+      "commit": "e155_softcap_7",
+      "val_bpb": 1.236925,
+      "description": "softcap 8→7",
+      "step_improvement_pct": 0.0179,
+      "total_improvement_pct": 1.8451
+    },
+    {
+      "index": 153,
+      "commit": "e152_softcap_10",
+      "val_bpb": 1.235304,
+      "description": "softcap 11→10",
+      "step_improvement_pct": 0.1311,
+      "total_improvement_pct": 1.9738
+    },
+    {
+      "index": 154,
+      "commit": "e153_softcap_9",
+      "val_bpb": 1.235127,
+      "description": "softcap 10→9",
+      "step_improvement_pct": 0.0143,
+      "total_improvement_pct": 1.9878
+    },
+    {
+      "index": 155,
+      "commit": "e154_softcap_8",
+      "val_bpb": 1.234749,
+      "description": "softcap 9→8",
+      "step_improvement_pct": 0.0306,
+      "total_improvement_pct": 2.0178
+    },
+    {
+      "index": 157,
+      "commit": "e157_matrix_lr_0.038",
+      "val_bpb": 1.232849,
+      "description": "MATRIX_LR 0.036→0.038 (no QK norm)",
+      "step_improvement_pct": 0.1539,
+      "total_improvement_pct": 2.1686
+    },
+    {
+      "index": 158,
+      "commit": "e158_matrix_lr_0.040",
+      "val_bpb": 1.231944,
+      "description": "MATRIX_LR 0.038→0.040",
+      "step_improvement_pct": 0.0734,
+      "total_improvement_pct": 2.2404
+    },
+    {
+      "index": 160,
+      "commit": "e160_scalar_lr_0.25",
+      "val_bpb": 1.229592,
+      "description": "SCALAR_LR 0.3→0.25",
+      "step_improvement_pct": 0.1909,
+      "total_improvement_pct": 2.427
+    },
+    {
+      "index": 161,
+      "commit": "e161_scalar_lr_0.2",
+      "val_bpb": 1.22895,
+      "description": "SCALAR_LR 0.25→0.2",
+      "step_improvement_pct": 0.0522,
+      "total_improvement_pct": 2.478
+    },
+    {
+      "index": 163,
+      "commit": "e163_wd_0.05",
+      "val_bpb": 1.226249,
+      "description": "WEIGHT_DECAY 0.06→0.05",
+      "step_improvement_pct": 0.2198,
+      "total_improvement_pct": 2.6923
+    },
+    {
+      "index": 165,
+      "commit": "e165_final_lr_frac_0.08",
+      "val_bpb": 1.224898,
+      "description": "FINAL_LR_FRAC 0.1→0.08",
+      "step_improvement_pct": 0.1102,
+      "total_improvement_pct": 2.7995
+    },
+    {
+      "index": 166,
+      "commit": "e166_final_lr_frac_0.05",
+      "val_bpb": 1.223458,
+      "description": "FINAL_LR_FRAC 0.08→0.05",
+      "step_improvement_pct": 0.1176,
+      "total_improvement_pct": 2.9138
+    },
+    {
+      "index": 167,
+      "commit": "e167_final_lr_frac_0.03",
+      "val_bpb": 1.222043,
+      "description": "FINAL_LR_FRAC 0.05→0.03",
+      "step_improvement_pct": 0.1157,
+      "total_improvement_pct": 3.0261
+    },
+    {
+      "index": 208,
+      "commit": "e208_pe_norm_1.05",
+      "val_bpb": 1.221922,
+      "description": "PE norm constant 1.02→1.05",
+      "step_improvement_pct": 0.0099,
+      "total_improvement_pct": 3.0357
+    },
+    {
+      "index": 211,
+      "commit": "e211_pe_norm_1.06",
+      "val_bpb": 1.221845,
+      "description": "PE norm constant 1.05→1.06",
+      "step_improvement_pct": 0.0063,
+      "total_improvement_pct": 3.0418
+    },
+    {
+      "index": 256,
+      "commit": "e256_wd_last_25pct",
+      "val_bpb": 1.221516,
+      "description": "WD only in last 25% of training",
+      "step_improvement_pct": 0.0269,
+      "total_improvement_pct": 3.0679
+    },
+    {
+      "index": 267,
+      "commit": "e267_softcap_9_wd_sched",
+      "val_bpb": 1.220934,
+      "description": "softcap 8→9 with WD schedule",
+      "step_improvement_pct": 0.0476,
+      "total_improvement_pct": 3.1141
+    },
+    {
+      "index": 272,
+      "commit": "e272_wd_thresh_0.78",
+      "val_bpb": 1.219684,
+      "description": "WD threshold 0.75→0.78 with softcap=9",
+      "step_improvement_pct": 0.1024,
+      "total_improvement_pct": 3.2133
+    },
+    {
+      "index": 291,
+      "commit": "e291_muon_beta2_0.96",
+      "val_bpb": 1.219433,
+      "description": "muon beta2 0.95→0.96 with WD thresh 0.78",
+      "step_improvement_pct": 0.0206,
+      "total_improvement_pct": 3.2332
+    },
+    {
+      "index": 329,
+      "commit": "e329_muon_beta2_0.955",
+      "val_bpb": 1.219251,
+      "description": "muon beta2 0.96→0.955",
+      "step_improvement_pct": 0.0149,
+      "total_improvement_pct": 3.2476
+    },
+    {
+      "index": 332,
+      "commit": "e332_final_lr_0.035_b955",
+      "val_bpb": 1.218771,
+      "description": "FINAL_LR_FRAC 0.03→0.035 with beta2=0.955",
+      "step_improvement_pct": 0.0394,
+      "total_improvement_pct": 3.2857
+    }
+  ],
+  "experiments": [
+    {
+      "index": 0,
+      "commit": "6bd04c4",
+      "val_bpb": 1.260177,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "baseline",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "Baseline",
+      "is_best": true
+    },
+    {
+      "index": 1,
+      "commit": "631de71",
+      "val_bpb": 1.539539,
+      "memory_gb": 10.3,
+      "status": "discard",
+      "description": "depth 16, 285M params - too large for 2080Ti",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 2,
+      "commit": "f584419",
+      "val_bpb": 1.308763,
+      "memory_gb": 3.9,
+      "status": "discard",
+      "description": "aspect_ratio 96, 94M params - wider model worse, fewer tokens",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 3,
+      "commit": "096a44b",
+      "val_bpb": 1.380072,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "batch 2^14 warmdown 0.3 - smaller batch less stable",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 4,
+      "commit": "a3c7c48",
+      "val_bpb": 1.262332,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "warmdown 0.3 - marginal, slightly worse",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 5,
+      "commit": "b6e0998",
+      "val_bpb": 1.273772,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "matrix LR 0.06 - too high, destabilizes",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 6,
+      "commit": "e23b26d",
+      "val_bpb": 1.259584,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "window pattern L (full attention)",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "Architecture",
+      "is_best": true
+    },
+    {
+      "index": 7,
+      "commit": "04c69b1",
+      "val_bpb": 1.266883,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "5% warmup - worse, model handles full LR fine",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 8,
+      "commit": "36eea7a",
+      "val_bpb": 1.255426,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "weight decay 0.1",
+      "phase": "Phase 1: Initial Exploration",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 9,
+      "commit": "81df6eb",
+      "val_bpb": 1.255046,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "weight decay 0.05",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 10,
+      "commit": "c71f1e3",
+      "val_bpb": 1.257436,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "weight decay 0.0 - too little, slightly worse",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 11,
+      "commit": "c447b65",
+      "val_bpb": 1.298318,
+      "memory_gb": 3.8,
+      "status": "discard",
+      "description": "depth 10, 86M params - too big, fewer tokens",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 12,
+      "commit": "f82f5f3",
+      "val_bpb": 1.265636,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "unembedding LR 0.01 - too high",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 13,
+      "commit": "1d743a9",
+      "val_bpb": 1.261237,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "embedding LR 0.3 - too low",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 14,
+      "commit": "61dd857",
+      "val_bpb": 1.352132,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "head_dim 64 - much worse, 128 better",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 15,
+      "commit": "adb80e3",
+      "val_bpb": 1.274506,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "SiLU activation - worse than relu²",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 16,
+      "commit": "847dcd8",
+      "val_bpb": 1.25673,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "softcap 20 - slightly worse than 15",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 17,
+      "commit": "0a56812",
+      "val_bpb": 1.253775,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "matrix LR 0.035",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": true
+    },
+    {
+      "index": 18,
+      "commit": "c31678b",
+      "val_bpb": 1.25497,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "matrix LR 0.03 - too low",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 19,
+      "commit": "d87825c",
+      "val_bpb": 1.255856,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "warmdown 0.4 - worse than 0.5",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 20,
+      "commit": "89e8750",
+      "val_bpb": 1.257652,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "adam beta1 0.9 - worse, 0.8 better",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 21,
+      "commit": "7ef1ce5",
+      "val_bpb": 1.256975,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "muon momentum start 0.90 - worse than 0.85",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 22,
+      "commit": "7c92bf6",
+      "val_bpb": 0.0,
+      "memory_gb": 0.0,
+      "status": "crash",
+      "description": "disable VE - optimizer crash (VE params have no grad)",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 23,
+      "commit": "4168040",
+      "val_bpb": 1.249351,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "scalar LR 0.3",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Scalar)",
+      "is_best": true
+    },
+    {
+      "index": 24,
+      "commit": "d2b4ac6",
+      "val_bpb": 1.253984,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "scalar LR 0.2 - too low",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 25,
+      "commit": "1411938",
+      "val_bpb": 1.252816,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "scalar LR 0.4 - worse than 0.3",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 26,
+      "commit": "953933f",
+      "val_bpb": 1.266089,
+      "memory_gb": 4.1,
+      "status": "discard",
+      "description": "device batch 32 - worse, larger micro-batch doesn't help",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Batch Size",
+      "is_best": false
+    },
+    {
+      "index": 27,
+      "commit": "c39b140",
+      "val_bpb": 1.251062,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "embedding LR 0.8 - slightly worse than 0.6",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 28,
+      "commit": "5f8c648",
+      "val_bpb": 1.26023,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "x0_lambda init 0.0 - worse, skip connection helps",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 29,
+      "commit": "7e22785",
+      "val_bpb": 1.251657,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "final LR frac 0.1 - worse, going to 0 is better",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 30,
+      "commit": "ad8d919",
+      "val_bpb": 1.255485,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "x0_lambda init 0.2 - worse than 0.1",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 31,
+      "commit": "bcf8529",
+      "val_bpb": 1.256931,
+      "memory_gb": 2.1,
+      "status": "discard",
+      "description": "MLP ratio 2x - worse, 4x better despite fewer tokens",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 32,
+      "commit": "d68a21a",
+      "val_bpb": 1.251661,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "weight decay 0.075 - worse than 0.05",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 33,
+      "commit": "673bfde",
+      "val_bpb": 1.256694,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "adam eps 1e-8 - worse, 1e-10 better",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 34,
+      "commit": "a85c2ac",
+      "val_bpb": 1.271316,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "muon ns_steps 3 - much worse, 5 needed",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 35,
+      "commit": "e252036",
+      "val_bpb": 1.250595,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "muon beta2 0.9 - close but worse than 0.95",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 36,
+      "commit": "772b86b",
+      "val_bpb": 1.253903,
+      "memory_gb": 1.8,
+      "status": "discard",
+      "description": "aspect 48, 33M params - too small despite more tokens",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 37,
+      "commit": "29bd2fb",
+      "val_bpb": 1.280069,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "total batch 2^15 - worse, 2^16 better for Muon",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 38,
+      "commit": "85d2ca5",
+      "val_bpb": 1.259332,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "unembedding LR 0.002 - worse, 0.004 better",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 39,
+      "commit": "b62d0e1",
+      "val_bpb": 1.245145,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "muon momentum end 0.90 (0.85→0.90 ramp)",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Muon)",
+      "is_best": true
+    },
+    {
+      "index": 40,
+      "commit": "1e81e03",
+      "val_bpb": 1.243264,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "muon momentum end 0.88 (0.85→0.88 ramp)",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Muon)",
+      "is_best": true
+    },
+    {
+      "index": 41,
+      "commit": "79b53f8",
+      "val_bpb": 1.243359,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "flat momentum 0.85 - basically same as 0.88 ramp",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 42,
+      "commit": "5b64e0c",
+      "val_bpb": 1.242762,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "matrix LR 0.04 retest with lower momentum - new best!",
+      "phase": "Phase 2: Foundational HP Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": true
+    },
+    {
+      "index": 43,
+      "commit": "582aa7e",
+      "val_bpb": 1.245843,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "matrix LR 0.045 with lower momentum - worse",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 44,
+      "commit": "b082094",
+      "val_bpb": 1.244824,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "scalar LR 0.25 with lower momentum - worse",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 45,
+      "commit": "8802035",
+      "val_bpb": 1.243179,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "weight decay 0.03 - close but worse than 0.05",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 46,
+      "commit": "2fe1628",
+      "val_bpb": 1.243457,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "embedding LR 0.7 - worse than 0.6",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 47,
+      "commit": "f19e15f",
+      "val_bpb": 1.243716,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "momentum ramp 150 steps - worse, 300 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 48,
+      "commit": "f2e9bf6",
+      "val_bpb": 1.244846,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "momentum start 0.80 - worse, 0.85 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 49,
+      "commit": "17c037e",
+      "val_bpb": 1.242125,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "constant weight decay (no schedule) - new best!",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 50,
+      "commit": "b9c6132",
+      "val_bpb": 1.247402,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "constant WD 0.04 - worse, 0.05 still best",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 51,
+      "commit": "f9069da",
+      "val_bpb": 1.241935,
+      "memory_gb": 2.4,
+      "status": "keep",
+      "description": "constant WD 0.06 - new best!",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 52,
+      "commit": "6ddaeb3",
+      "val_bpb": 1.243061,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "constant WD 0.07 - worse, 0.06 optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 53,
+      "commit": "9025aba",
+      "val_bpb": 1.25178,
+      "memory_gb": 2.4,
+      "status": "discard",
+      "description": "RoPE base 5000 - worse, 10000 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "RoPE",
+      "is_best": false
+    },
+    {
+      "index": 54,
+      "commit": "dd9320f",
+      "val_bpb": 1.245358,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "ve_gate_channels=16 - worse, 32 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 55,
+      "commit": "9d311b8",
+      "val_bpb": 1.244864,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "EMBEDDING_LR=0.4 - worse, 0.6 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 56,
+      "commit": "8d5aad5",
+      "val_bpb": 1.25076,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "x0_lambdas init=0.05 - worse, 0.1 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 57,
+      "commit": "9ebad89",
+      "val_bpb": 1.247494,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WARMDOWN_RATIO=0.3 - worse, 0.5 still optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 58,
+      "commit": "b6b6eef",
+      "val_bpb": 1.249534,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "RoPE base 20000 - worse, 10000 optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "RoPE",
+      "is_best": false
+    },
+    {
+      "index": 59,
+      "commit": "a6e575c",
+      "val_bpb": 1.24704,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "UNEMBEDDING_LR=0.006 - worse, 0.004 optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 60,
+      "commit": "1b0f361",
+      "val_bpb": 1.245596,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "SCALAR_LR=0.2 - worse, 0.3 optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 61,
+      "commit": "c47b9df",
+      "val_bpb": 1.243804,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "softcap=20 - worse, 15 optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 62,
+      "commit": "b013e06",
+      "val_bpb": 1.246554,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MATRIX_LR=0.045 - worse, 0.04 optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 63,
+      "commit": "9f17569",
+      "val_bpb": 1.24182,
+      "memory_gb": 2.5,
+      "status": "keep",
+      "description": "FINAL_LR_FRAC=0.1 - new best!",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": true
+    },
+    {
+      "index": 64,
+      "commit": "1ae018e",
+      "val_bpb": 1.250619,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "FINAL_LR_FRAC=0.2 - worse, 0.1 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 65,
+      "commit": "bab7bc3",
+      "val_bpb": 1.242954,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "FINAL_LR_FRAC=0.05 - worse, 0.1 optimal",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 66,
+      "commit": "db4b1d3",
+      "val_bpb": 1.24161,
+      "memory_gb": 2.5,
+      "status": "keep",
+      "description": "momentum end 0.86 - new best!",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": true
+    },
+    {
+      "index": 67,
+      "commit": "a56e783",
+      "val_bpb": 1.240961,
+      "memory_gb": 2.5,
+      "status": "keep",
+      "description": "constant momentum 0.85 - new best!",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": true
+    },
+    {
+      "index": 68,
+      "commit": "daa6e68",
+      "val_bpb": 1.247338,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "constant momentum 0.80 - worse, 0.85 better",
+      "phase": "Phase 3: Momentum & WD Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 69,
+      "commit": "25e068b",
+      "val_bpb": 1.244584,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "constant momentum 0.82 - worse, 0.85 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 70,
+      "commit": "e5fa49a",
+      "val_bpb": 1.242362,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WD=0.07 with const momentum - worse, 0.06 still optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 71,
+      "commit": "31a6f0d",
+      "val_bpb": 1.244683,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MATRIX_LR=0.035 with const momentum - worse, 0.04 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 72,
+      "commit": "ea994d4",
+      "val_bpb": 1.245964,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "ADAM beta1=0.85 - worse, 0.8 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 73,
+      "commit": "d69176f",
+      "val_bpb": 1.250509,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WARMUP_RATIO=0.05 - worse, 0.0 better",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 74,
+      "commit": "3329b30",
+      "val_bpb": 1.239629,
+      "memory_gb": 2.5,
+      "status": "keep",
+      "description": "softcap=12 - new best!",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Softcap (Attention)",
+      "is_best": true
+    },
+    {
+      "index": 75,
+      "commit": "f939078",
+      "val_bpb": 1.244396,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "softcap=10 - worse, 12 better",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 76,
+      "commit": "2015206",
+      "val_bpb": 1.243057,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WARMDOWN_RATIO=0.6 - worse, 0.5 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 77,
+      "commit": "7eefde9",
+      "val_bpb": 1.244032,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "EMBEDDING_LR=0.8 - worse, 0.6 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 78,
+      "commit": "1f6e065",
+      "val_bpb": 1.253963,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "TOTAL_BATCH_SIZE=2^17 - worse, 2^16 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Batch Size",
+      "is_best": false
+    },
+    {
+      "index": 79,
+      "commit": "a0b8875",
+      "val_bpb": 1.24478,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "FINAL_LR_FRAC=0.15 - worse, 0.1 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 80,
+      "commit": "1e8bc3f",
+      "val_bpb": 1.247651,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "ns_steps=6 - worse, 5 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 81,
+      "commit": "93f7451",
+      "val_bpb": 1.243909,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "UNEMBEDDING_LR=0.003 - worse, 0.004 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 82,
+      "commit": "ddc7983",
+      "val_bpb": 1.239735,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WD=0.055 - close but worse, 0.06 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 83,
+      "commit": "09720e4",
+      "val_bpb": 1.278069,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "TOTAL_BATCH_SIZE=2^15 - much worse, 2^16 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Batch Size",
+      "is_best": false
+    },
+    {
+      "index": 84,
+      "commit": "d810b26",
+      "val_bpb": 1.244051,
+      "memory_gb": 1.6,
+      "status": "discard",
+      "description": "DEVICE_BATCH_SIZE=8 - worse, 16 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Batch Size",
+      "is_best": false
+    },
+    {
+      "index": 85,
+      "commit": "c52fef2",
+      "val_bpb": 1.242022,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WD=0.065 - worse, 0.06 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 86,
+      "commit": "b2acac5",
+      "val_bpb": 1.243278,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "SCALAR_LR=0.25 - worse, 0.3 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 87,
+      "commit": "0a89dfb",
+      "val_bpb": 1.239233,
+      "memory_gb": 2.5,
+      "status": "keep",
+      "description": "MATRIX_LR=0.038 - new best!",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": true
+    },
+    {
+      "index": 88,
+      "commit": "e1d4628",
+      "val_bpb": 1.238607,
+      "memory_gb": 2.5,
+      "status": "keep",
+      "description": "MATRIX_LR=0.036 - new best!",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": true
+    },
+    {
+      "index": 89,
+      "commit": "469ffbf",
+      "val_bpb": 1.244693,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MATRIX_LR=0.034 - worse, 0.036 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 90,
+      "commit": "5630c24",
+      "val_bpb": 1.24231,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MATRIX_LR=0.035 - worse, 0.036 confirmed optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 91,
+      "commit": "351aa65",
+      "val_bpb": 1.239768,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "softcap=13 - worse, 12 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 92,
+      "commit": "8b5892c",
+      "val_bpb": 1.241238,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "SCALAR_LR=0.35 - worse, 0.3 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 93,
+      "commit": "b0aa5c1",
+      "val_bpb": 1.246153,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "FINAL_LR_FRAC=0.08 - worse, 0.1 confirmed optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 94,
+      "commit": "4fd277b",
+      "val_bpb": 1.239378,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MATRIX_LR=0.037 - close but worse, 0.036 confirmed",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 95,
+      "commit": "5f0374c",
+      "val_bpb": 1.24183,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "softcap=11 - worse, 12 confirmed optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 96,
+      "commit": "c783ff5",
+      "val_bpb": 1.242269,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "muon beta2=0.90 - worse, 0.95 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 97,
+      "commit": "7437ea1",
+      "val_bpb": 1.239371,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "ADAM beta1=0.75 - close but worse, 0.8 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 98,
+      "commit": "ecb449d",
+      "val_bpb": 1.246843,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "UNEMBEDDING_LR=0.005 - worse, 0.004 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 99,
+      "commit": "5056f46",
+      "val_bpb": 1.245413,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "x0_lambdas=0.15 - worse, 0.1 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 100,
+      "commit": "bdc64dd",
+      "val_bpb": 1.241973,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "EMBEDDING_LR=0.5 - worse, 0.6 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 101,
+      "commit": "d0a157b",
+      "val_bpb": 1.252789,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "resid_lambdas=0.9 - much worse, 1.0 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 102,
+      "commit": "b23571b",
+      "val_bpb": 1.24266,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "momentum=0.87 - worse, 0.85 confirmed optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 103,
+      "commit": "68042eb",
+      "val_bpb": 1.242494,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "lm_head init std=0.002 - worse, 0.001 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 104,
+      "commit": "de239f7",
+      "val_bpb": 1.242096,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "FINAL_LR_FRAC=0.12 - worse, 0.1 confirmed",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 105,
+      "commit": "7decc07",
+      "val_bpb": 1.241909,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WD=0.055 with MLR=0.036 - worse, 0.06 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 106,
+      "commit": "1b0fdb2",
+      "val_bpb": 1.250099,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WD=0.01 on embeddings - worse, 0.0 better",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 107,
+      "commit": "c58a55d",
+      "val_bpb": 1.249989,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "ve_gate_channels=64 - worse, 32 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 108,
+      "commit": "7c6ed8b",
+      "val_bpb": 1.258661,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "grad clip 1.0 - much worse, no clipping better",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Regularization",
+      "is_best": false
+    },
+    {
+      "index": 109,
+      "commit": "314cd44",
+      "val_bpb": 1.24498,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "wte init std=0.5 - worse, 1.0 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 110,
+      "commit": "d0bb4b9",
+      "val_bpb": 1.249731,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "standard WD - worse, cautious WD better",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 111,
+      "commit": "9b3b8c6",
+      "val_bpb": 1.278655,
+      "memory_gb": 2.3,
+      "status": "discard",
+      "description": "DEPTH=7 - much worse, 8 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 112,
+      "commit": "3233f16",
+      "val_bpb": null,
+      "memory_gb": 2.5,
+      "status": "crash",
+      "description": "GQA n_kv_head=2 - crash, shape mismatch",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 113,
+      "commit": "0031d1b",
+      "val_bpb": 1.272648,
+      "memory_gb": 3.2,
+      "status": "discard",
+      "description": "ASPECT_RATIO=72 (dim=640) - worse, 64 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 114,
+      "commit": "106679b",
+      "val_bpb": 1.244823,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MATRIX_LR=0.033 - worse, 0.036 confirmed optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 115,
+      "commit": "02f41c9",
+      "val_bpb": 1.285651,
+      "memory_gb": 3.6,
+      "status": "discard",
+      "description": "DEPTH=9 - much worse, 8 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 116,
+      "commit": "c3259ec",
+      "val_bpb": 1.241704,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "SCALAR_LR=0.28 - worse, 0.3 confirmed",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 117,
+      "commit": "5211153",
+      "val_bpb": 1.332204,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "HEAD_DIM=64 - much worse, 128 optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 118,
+      "commit": "44aac30",
+      "val_bpb": 1.245343,
+      "memory_gb": 2.3,
+      "status": "discard",
+      "description": "MLP ratio 3x - worse, 4x optimal",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 119,
+      "commit": "c4ecb2a",
+      "val_bpb": 1.263796,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "GELU - much worse than ReLU²",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 120,
+      "commit": "0dcd569",
+      "val_bpb": 1.237766,
+      "memory_gb": 2.5,
+      "status": "keep",
+      "description": "weight tying - new best!",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Weight Tying",
+      "is_best": true
+    },
+    {
+      "index": 121,
+      "commit": "e92b9fd",
+      "val_bpb": 3.150207,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "weight tying single update - terrible, double update better",
+      "phase": "Phase 4: Fine-Grained Grid Search",
+      "category": "Weight Tying",
+      "is_best": false
+    },
+    {
+      "index": 122,
+      "commit": "10606b4",
+      "val_bpb": 1.244324,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MLR=0.034 with tying - worse, 0.036 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 123,
+      "commit": "d226aaf",
+      "val_bpb": 1.237927,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WD=0.055 with tying - close but worse, 0.06 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 124,
+      "commit": "38d9b5d",
+      "val_bpb": 1.245088,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "EMBEDDING_LR=0.7 with tying - worse, 0.6 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 125,
+      "commit": "109a493",
+      "val_bpb": 1.244019,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "UNEMBEDDING_LR=0.003 with tying - worse, 0.004 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 126,
+      "commit": "b8f783c",
+      "val_bpb": 1.243773,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "UNEMBEDDING_LR=0.005 with tying - worse, 0.004 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 127,
+      "commit": "c854880",
+      "val_bpb": 1.240003,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "cosine warmdown - close but worse, linear optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 128,
+      "commit": "6c4ec63",
+      "val_bpb": 1.239669,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "MLR=0.038 with tying - worse, 0.036 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 129,
+      "commit": "000ca47",
+      "val_bpb": 1.23975,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "momentum=0.83 - worse, 0.85 confirmed",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 130,
+      "commit": "6c69e84",
+      "val_bpb": 1.238472,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "WARMDOWN=0.4 with tying - close but worse, 0.5 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 131,
+      "commit": "2f36c29",
+      "val_bpb": 1.238958,
+      "memory_gb": 2.5,
+      "status": "discard",
+      "description": "x0 beta1=0.90 - close but worse, 0.96 optimal",
+      "phase": "Phase 5: Weight Tying",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 132,
+      "commit": "91829a8",
+      "val_bpb": 1.241025,
+      "memory_gb": 2.7,
+      "status": "discard",
+      "description": "SWA - worse, no averaging better",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Regularization",
+      "is_best": false
+    },
+    {
+      "index": 133,
+      "commit": "e133_wd_ramp_up",
+      "val_bpb": 1.239943,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "WD schedule 0.03→0.06 ramp UP",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 134,
+      "commit": "e134_label_smoothing_0.1",
+      "val_bpb": 1.545536,
+      "memory_gb": 2.7,
+      "status": "worse",
+      "description": "label smoothing 0.1",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Regularization",
+      "is_best": false
+    },
+    {
+      "index": 135,
+      "commit": "e135_warmup_0.02",
+      "val_bpb": 1.263286,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "warmup ratio 0→2%",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 136,
+      "commit": "e136_warmdown_0.6_tying",
+      "val_bpb": 1.24185,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.6 with weight tying",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 137,
+      "commit": "e137_embed_beta1_0.9",
+      "val_bpb": 1.244454,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "Adam beta1 0.8→0.9 for embeddings+value_embeds",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 138,
+      "commit": "e138_ns_steps_4",
+      "val_bpb": 1.247225,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "muon ns_steps 5→4",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 139,
+      "commit": "e139_unembed_lr_0.003",
+      "val_bpb": 1.248466,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "unembedding_lr 0.004→0.003 with tying",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 140,
+      "commit": "e140_unembed_lr_0.005",
+      "val_bpb": 1.247874,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "unembedding_lr 0.004→0.005 with tying",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 141,
+      "commit": "e141_ema_eval_0.99",
+      "val_bpb": 1.242307,
+      "memory_gb": 2.6,
+      "status": "worse",
+      "description": "EMA evaluation beta=0.99 (also lost steps)",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 142,
+      "commit": "e142_reduce_overhead",
+      "val_bpb": null,
+      "memory_gb": null,
+      "status": "crash",
+      "description": "torch.compile reduce-overhead crashes with weight tying",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Weight Tying",
+      "is_best": false
+    },
+    {
+      "index": 143,
+      "commit": "e143_per_dim_gating",
+      "val_bpb": 1.251619,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "per-dim resid_lambdas/x0_lambdas (8K extra params, lost steps)",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 144,
+      "commit": "e144_mtp_t2",
+      "val_bpb": 1.561288,
+      "memory_gb": 2.5,
+      "status": "worse",
+      "description": "MTP auxiliary loss t+2 weight=0.15 (lost 84 steps)",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 145,
+      "commit": "e145_device_batch_32",
+      "val_bpb": 1.262561,
+      "memory_gb": 4.1,
+      "status": "worse",
+      "description": "DEVICE_BATCH_SIZE 16→32 with tying",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Batch Size",
+      "is_best": false
+    },
+    {
+      "index": 146,
+      "commit": "e146_muon_beta2_0.92",
+      "val_bpb": 1.24349,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "muon beta2 0.95→0.92",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 147,
+      "commit": "e147_embed_lr_0.5_tying",
+      "val_bpb": 1.24369,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.5 with tying",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 148,
+      "commit": "e148_embed_lr_0.7_tying",
+      "val_bpb": 1.247631,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.7 with tying",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 149,
+      "commit": "e149_embed_beta2_0.99",
+      "val_bpb": 1.244027,
+      "memory_gb": 2.4,
+      "status": "worse",
+      "description": "embedding adam beta2 0.95→0.99",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 150,
+      "commit": "e150_no_qk_norm",
+      "val_bpb": 1.237623,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "remove QK norm (saves compute)",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Normalization",
+      "is_best": true
+    },
+    {
+      "index": 151,
+      "commit": "e151_softcap_11_no_qk",
+      "val_bpb": 1.237146,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "softcap 12→11 (after removing QK norm)",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Softcap (Attention)",
+      "is_best": true
+    },
+    {
+      "index": 152,
+      "commit": "e155_softcap_7",
+      "val_bpb": 1.236925,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "softcap 8→7",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Softcap (Attention)",
+      "is_best": true
+    },
+    {
+      "index": 153,
+      "commit": "e152_softcap_10",
+      "val_bpb": 1.235304,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "softcap 11→10",
+      "phase": "Phase 6: QK Norm & Softcap Deep Dive",
+      "category": "Softcap (Attention)",
+      "is_best": true
+    },
+    {
+      "index": 154,
+      "commit": "e153_softcap_9",
+      "val_bpb": 1.235127,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "softcap 10→9",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Softcap (Attention)",
+      "is_best": true
+    },
+    {
+      "index": 155,
+      "commit": "e154_softcap_8",
+      "val_bpb": 1.234749,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "softcap 9→8",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Softcap (Attention)",
+      "is_best": true
+    },
+    {
+      "index": 156,
+      "commit": "e156_matrix_lr_0.034",
+      "val_bpb": 1.237807,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "MATRIX_LR 0.036→0.034",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 157,
+      "commit": "e157_matrix_lr_0.038",
+      "val_bpb": 1.232849,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "MATRIX_LR 0.036→0.038 (no QK norm)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Matrix)",
+      "is_best": true
+    },
+    {
+      "index": 158,
+      "commit": "e158_matrix_lr_0.040",
+      "val_bpb": 1.231944,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "MATRIX_LR 0.038→0.040",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Matrix)",
+      "is_best": true
+    },
+    {
+      "index": 159,
+      "commit": "e159_matrix_lr_0.042",
+      "val_bpb": 1.232326,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.042",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 160,
+      "commit": "e160_scalar_lr_0.25",
+      "val_bpb": 1.229592,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "SCALAR_LR 0.3→0.25",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Scalar)",
+      "is_best": true
+    },
+    {
+      "index": 161,
+      "commit": "e161_scalar_lr_0.2",
+      "val_bpb": 1.22895,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "SCALAR_LR 0.25→0.2",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Scalar)",
+      "is_best": true
+    },
+    {
+      "index": 162,
+      "commit": "e162_scalar_lr_0.15",
+      "val_bpb": 1.22996,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.15",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 163,
+      "commit": "e163_wd_0.05",
+      "val_bpb": 1.226249,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "WEIGHT_DECAY 0.06→0.05",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 164,
+      "commit": "e164_wd_0.04",
+      "val_bpb": 1.228692,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.04",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 165,
+      "commit": "e165_final_lr_frac_0.08",
+      "val_bpb": 1.224898,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "FINAL_LR_FRAC 0.1→0.08",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Other)",
+      "is_best": true
+    },
+    {
+      "index": 166,
+      "commit": "e166_final_lr_frac_0.05",
+      "val_bpb": 1.223458,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "FINAL_LR_FRAC 0.08→0.05",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Other)",
+      "is_best": true
+    },
+    {
+      "index": 167,
+      "commit": "e167_final_lr_frac_0.03",
+      "val_bpb": 1.222043,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "FINAL_LR_FRAC 0.05→0.03",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Other)",
+      "is_best": true
+    },
+    {
+      "index": 168,
+      "commit": "e168_final_lr_frac_0.0",
+      "val_bpb": 1.222074,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.0",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 169,
+      "commit": "e169_unembed_lr_0.003",
+      "val_bpb": 1.224407,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "UNEMBEDDING_LR 0.004→0.003 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 170,
+      "commit": "e170_embed_lr_0.5_retest",
+      "val_bpb": 1.230038,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.5 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 171,
+      "commit": "e171_momentum_0.90",
+      "val_bpb": 1.222875,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "muon momentum 0.85→0.90 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 172,
+      "commit": "e172_matrix_lr_0.041",
+      "val_bpb": 1.226102,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.041",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 173,
+      "commit": "e173_warmdown_0.45",
+      "val_bpb": 1.22697,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.45 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 174,
+      "commit": "e174_matrix_lr_0.039",
+      "val_bpb": 1.232273,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.039",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 175,
+      "commit": "e175_scalar_lr_0.22",
+      "val_bpb": 1.233348,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.22",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 176,
+      "commit": "e176_wd_0.055",
+      "val_bpb": 1.229974,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.055",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 177,
+      "commit": "e177_final_lr_frac_0.02",
+      "val_bpb": 1.230505,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.02",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 178,
+      "commit": "e178_softcap_7.5",
+      "val_bpb": 1.230133,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "softcap 8→7.5",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 179,
+      "commit": "e179_embed_beta1_0.75",
+      "val_bpb": 1.230143,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "embedding adam beta1 0.8→0.75 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 180,
+      "commit": "e180_warmdown_0.55",
+      "val_bpb": 1.228195,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.55",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 181,
+      "commit": "e181_batch_2^15",
+      "val_bpb": 1.252608,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "TOTAL_BATCH_SIZE 2^16→2^15",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Batch Size",
+      "is_best": false
+    },
+    {
+      "index": 182,
+      "commit": "e182_scalar_lr_0.18",
+      "val_bpb": 1.227086,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.18",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 183,
+      "commit": "e183_no_init_norm",
+      "val_bpb": 1.239447,
+      "memory_gb": 2.0,
+      "status": "worse",
+      "description": "remove initial norm after embedding",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 184,
+      "commit": "e184_x0_init_0.05",
+      "val_bpb": 1.232248,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "x0_lambdas init 0.1→0.05",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 185,
+      "commit": "e185_momentum_0.83",
+      "val_bpb": 1.234419,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "muon momentum 0.85→0.83 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 186,
+      "commit": "e186_wd_0.045",
+      "val_bpb": 1.228865,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.045",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 187,
+      "commit": "e187_no_ve_gate",
+      "val_bpb": null,
+      "memory_gb": null,
+      "status": "crash",
+      "description": "remove VE gate direct add (grad=None crash)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 188,
+      "commit": "e188_lr_0.042_wd_0.045",
+      "val_bpb": 1.227072,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "MATRIX_LR=0.042 WEIGHT_DECAY=0.045 combo",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 189,
+      "commit": "e189_final_lr_frac_0.04",
+      "val_bpb": 1.229809,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.04",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 190,
+      "commit": "e190_no_cautious_wd",
+      "val_bpb": 1.249894,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "remove cautious WD mask (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 191,
+      "commit": "e191_final_lr_frac_0.01",
+      "val_bpb": 1.229648,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.01",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 192,
+      "commit": "e192_embed_lr_0.8",
+      "val_bpb": 1.224256,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.8",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 193,
+      "commit": "e193_embed_lr_0.7_retest",
+      "val_bpb": 1.226115,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.7 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 194,
+      "commit": "e194_unembed_lr_0.005",
+      "val_bpb": 1.231697,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "UNEMBEDDING_LR 0.004→0.005 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 195,
+      "commit": "e195_x0_init_0.15",
+      "val_bpb": 1.231208,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "x0_lambdas init 0.1→0.15 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 196,
+      "commit": "e196_momentum_0.87",
+      "val_bpb": 1.224358,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "muon momentum 0.85→0.87",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 197,
+      "commit": "e197_lm_head_init_0.0005",
+      "val_bpb": 1.234356,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "lm_head init std 0.001→0.0005",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 198,
+      "commit": "e198_wte_init_0.8",
+      "val_bpb": 1.230179,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "wte init std 1.0→0.8 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 199,
+      "commit": "e199_resid_init_0.95",
+      "val_bpb": 1.230863,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "resid_lambdas init 1.0→0.95",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 200,
+      "commit": "e200_rope_base_5000",
+      "val_bpb": 1.229838,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "RoPE base 10000→5000 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "RoPE",
+      "is_best": false
+    },
+    {
+      "index": 201,
+      "commit": "e201_adam_beta2_0.99",
+      "val_bpb": 1.224901,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "ADAM_BETAS beta2 0.95→0.99",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 202,
+      "commit": "e202_x0_beta2_0.90",
+      "val_bpb": 1.22606,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "x0 adam beta2 0.95→0.90",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 203,
+      "commit": "e203_no_final_norm",
+      "val_bpb": 1.261611,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "remove final norm before lm_head",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Normalization",
+      "is_best": false
+    },
+    {
+      "index": 204,
+      "commit": "e204_muon_beta2_0.90",
+      "val_bpb": 1.224621,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "muon beta2 0.95→0.90 (retest)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 205,
+      "commit": "e205_adam_eps_1e-8",
+      "val_bpb": 1.229325,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "Adam eps 1e-10→1e-8 for all groups",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 206,
+      "commit": "e206_no_normuon",
+      "val_bpb": 1.233263,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "remove NorMuon variance reduction (588 steps)",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 207,
+      "commit": "e207_pe_norm_1.01",
+      "val_bpb": 1.226,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "PE norm constant 1.02→1.01",
+      "phase": "Phase 7: Systematic Re-testing",
+      "category": "Normalization",
+      "is_best": false
+    },
+    {
+      "index": 208,
+      "commit": "e208_pe_norm_1.05",
+      "val_bpb": 1.221922,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "PE norm constant 1.02→1.05",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Normalization",
+      "is_best": true
+    },
+    {
+      "index": 209,
+      "commit": "e209_pe_norm_1.08",
+      "val_bpb": 1.229248,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "PE norm constant 1.05→1.08",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Normalization",
+      "is_best": false
+    },
+    {
+      "index": 210,
+      "commit": "e210_pe_norm_1.03",
+      "val_bpb": 1.223003,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "PE norm constant 1.05→1.03",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Normalization",
+      "is_best": false
+    },
+    {
+      "index": 211,
+      "commit": "e211_pe_norm_1.06",
+      "val_bpb": 1.221845,
+      "memory_gb": 2.1,
+      "status": "improved",
+      "description": "PE norm constant 1.05→1.06",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Normalization",
+      "is_best": true
+    },
+    {
+      "index": 212,
+      "commit": "e212_pe_norm_1.07",
+      "val_bpb": 1.225926,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "PE norm constant 1.06→1.07",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Normalization",
+      "is_best": false
+    },
+    {
+      "index": 213,
+      "commit": "e213_matrix_lr_0.042_pe106",
+      "val_bpb": 1.222131,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.042 (PE 1.06)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 214,
+      "commit": "e214_scalar_lr_0.25_pe106",
+      "val_bpb": 1.225812,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.25 (PE 1.06)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 215,
+      "commit": "e215_softcap_9_pe106",
+      "val_bpb": 1.222326,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "softcap 8→9 (PE 1.06)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 216,
+      "commit": "e216_wd_0.048",
+      "val_bpb": 1.226805,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.048",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 217,
+      "commit": "e217_wd_0.052",
+      "val_bpb": 1.225079,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.052",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 218,
+      "commit": "e218_final_lr_frac_0.025",
+      "val_bpb": 1.223791,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.025",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 219,
+      "commit": "e219_muon_beta2_0.97",
+      "val_bpb": 1.223651,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "muon beta2 0.95→0.97",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 220,
+      "commit": "e220_lr_0.039_wd_0.055",
+      "val_bpb": 1.232178,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "MATRIX_LR=0.039 WD=0.055 combo",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 221,
+      "commit": "e221_embed_lr_0.55",
+      "val_bpb": 1.231227,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.55",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 222,
+      "commit": "e222_unembed_lr_0.0035",
+      "val_bpb": 1.228213,
+      "memory_gb": 2.1,
+      "status": "worse",
+      "description": "UNEMBEDDING_LR 0.004→0.0035",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 223,
+      "commit": "e223_lr_combo_0.041_0.18",
+      "val_bpb": 1.229677,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR=0.041 SCALAR_LR=0.18 combo",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 224,
+      "commit": "e224_warmdown_0.4",
+      "val_bpb": 1.229427,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.4",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 225,
+      "commit": "e225_warmdown_0.6",
+      "val_bpb": 1.23029,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.6",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 226,
+      "commit": "e226_resid_lr_0.02",
+      "val_bpb": 1.231546,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "resid_lambdas LR x0.01→x0.02",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 227,
+      "commit": "e227_resid_lr_0.005",
+      "val_bpb": 1.227642,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "resid_lambdas LR x0.01→x0.005",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 228,
+      "commit": "e228_ve_lr_0.5x",
+      "val_bpb": 1.235563,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "value_embeds LR x0.5",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 229,
+      "commit": "e229_ve_lr_1.5x",
+      "val_bpb": 1.226927,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "value_embeds LR x1.5",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 230,
+      "commit": "e230_ve_gate_sigmoid",
+      "val_bpb": 1.23652,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "ve_gate remove 2x scaling",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 231,
+      "commit": "e231_ve_gate_3x",
+      "val_bpb": 1.227847,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "ve_gate 3x scaling",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 232,
+      "commit": "e232_parallel_attn_mlp",
+      "val_bpb": 1.239036,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "parallel attn+MLP (GPT-J style)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 233,
+      "commit": "e233_warmup_0.01",
+      "val_bpb": 1.241584,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WARMUP_RATIO 0.0→0.01",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 234,
+      "commit": "e234_proj_init_1e4",
+      "val_bpb": 1.236572,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "output proj zero→1e-4 uniform",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Other",
+      "is_best": false
+    },
+    {
+      "index": 235,
+      "commit": "e235_ns_steps_6",
+      "val_bpb": 1.227767,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "Muon ns_steps 5→6",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 236,
+      "commit": "e236_layer_scaled_init",
+      "val_bpb": 1.237171,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "GPT-2 style layer-scaled init",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 237,
+      "commit": "e237_ve_init_0.5x",
+      "val_bpb": 1.230467,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "value_embeds init scale x0.5",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 238,
+      "commit": "e238_adam_beta1_0.85",
+      "val_bpb": 1.231506,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "ADAM_BETAS (0.8,0.95)→(0.85,0.95)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 239,
+      "commit": "e239_adam_beta1_0.75",
+      "val_bpb": 1.23212,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "ADAM_BETAS (0.8,0.95)→(0.75,0.95)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 240,
+      "commit": "e240_max_autotune",
+      "val_bpb": null,
+      "memory_gb": null,
+      "status": "crash",
+      "description": "torch.compile max-autotune (CUDA graphs + weight tying)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Weight Tying",
+      "is_best": false
+    },
+    {
+      "index": 241,
+      "commit": "e241_learnable_softcap",
+      "val_bpb": 1.971925,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "learnable softcap (init=8, log-space)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 242,
+      "commit": "e242_momentum_0.88",
+      "val_bpb": 1.224744,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon momentum 0.85→0.88 ramp",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 243,
+      "commit": "e243_momentum_0.83",
+      "val_bpb": 1.236831,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon momentum 0.85→0.83 constant",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 244,
+      "commit": "e244_wd_warmup",
+      "val_bpb": 1.227255,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD warmup over first 10%",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 245,
+      "commit": "e245_eps_1e12",
+      "val_bpb": 1.233735,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "Adam eps 1e-10→1e-12",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 246,
+      "commit": "e246_quad_warmdown",
+      "val_bpb": 1.236373,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "quadratic warmdown schedule",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 247,
+      "commit": "e247_sqrt_warmdown",
+      "val_bpb": 1.231766,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "sqrt warmdown schedule",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 248,
+      "commit": "e248_relu_1.5",
+      "val_bpb": 1.233298,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MLP ReLU^2→ReLU^1.5",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 249,
+      "commit": "e249_relu_3",
+      "val_bpb": 1.252404,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MLP ReLU^2→ReLU^3",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 250,
+      "commit": "e250_ve_gate_48",
+      "val_bpb": 1.229239,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "ve_gate_channels 32→48",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 251,
+      "commit": "e251_ve_all_layers",
+      "val_bpb": 1.230462,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "has_ve all layers (was alternating)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 252,
+      "commit": "e252_depth_scaling",
+      "val_bpb": 1.250244,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "depth scaling / sqrt(n_layer)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 253,
+      "commit": "e253_no_init_norm",
+      "val_bpb": 1.230069,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "remove initial RMS norm on embedding",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 254,
+      "commit": "e254_no_compile",
+      "val_bpb": 1.28879,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "disable torch.compile (314 steps vs 563)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 255,
+      "commit": "e255_wd_warmdown_only",
+      "val_bpb": 1.222014,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD only during warmdown (close!)",
+      "phase": "Phase 8: Advanced Techniques",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 256,
+      "commit": "e256_wd_last_25pct",
+      "val_bpb": 1.221516,
+      "memory_gb": 2.2,
+      "status": "NEW BEST",
+      "description": "WD only in last 25% of training",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 257,
+      "commit": "e257_wd_last_20pct",
+      "val_bpb": 1.221536,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD only in last 20% (0.75 was better)",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 258,
+      "commit": "e258_wd_last_30pct",
+      "val_bpb": 1.224094,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD only in last 30% (0.75 threshold better)",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 259,
+      "commit": "e259_mlr_0.038_wd_sched",
+      "val_bpb": 1.222911,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.038 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 260,
+      "commit": "e260_mlr_0.042_wd_sched",
+      "val_bpb": 1.222005,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.042 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 261,
+      "commit": "e261_wd_0.08",
+      "val_bpb": 1.224805,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.08 (last 25%)",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 262,
+      "commit": "e262_wd_0.03",
+      "val_bpb": 1.223543,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.03 (last 25%)",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 263,
+      "commit": "e263_scalar_lr_0.18",
+      "val_bpb": 1.222379,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.18 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 264,
+      "commit": "e264_embed_lr_0.5",
+      "val_bpb": 1.223996,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.5 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 265,
+      "commit": "e265_final_lr_0.02",
+      "val_bpb": 1.222726,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.02 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 266,
+      "commit": "e266_softcap_7",
+      "val_bpb": 1.226134,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "softcap 8→7 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 267,
+      "commit": "e267_softcap_9_wd_sched",
+      "val_bpb": 1.220934,
+      "memory_gb": 2.2,
+      "status": "NEW BEST",
+      "description": "softcap 8→9 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 268,
+      "commit": "e268_softcap_10",
+      "val_bpb": 1.224494,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "softcap 9→10 with WD schedule",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 269,
+      "commit": "e269_unembed_lr_0.005",
+      "val_bpb": 1.222881,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "UNEMBEDDING_LR 0.004→0.005 with softcap=9",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 270,
+      "commit": "e270_pe_norm_1.07",
+      "val_bpb": 1.223483,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "PE norm 1.06→1.07 with softcap=9 WD sched",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 271,
+      "commit": "e271_warmdown_0.45",
+      "val_bpb": 1.22179,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.45 with softcap=9",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Softcap (Attention)",
+      "is_best": false
+    },
+    {
+      "index": 272,
+      "commit": "e272_wd_thresh_0.78",
+      "val_bpb": 1.219684,
+      "memory_gb": 2.2,
+      "status": "NEW BEST",
+      "description": "WD threshold 0.75→0.78 with softcap=9",
+      "phase": "Phase 9: WD Scheduling Discovery",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 273,
+      "commit": "e273_wd_thresh_0.77",
+      "val_bpb": 1.221012,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD threshold 0.78→0.77",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 274,
+      "commit": "e274_wd_thresh_0.80",
+      "val_bpb": 1.220061,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD threshold 0.78→0.80",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 275,
+      "commit": "e275_mlr_0.038_v2",
+      "val_bpb": 1.220206,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.038 with WD thresh 0.78 softcap 9",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 276,
+      "commit": "e276_embed_lr_0.7",
+      "val_bpb": 1.220034,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.7 with WD thresh 0.78",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 277,
+      "commit": "e277_final_lr_0.04",
+      "val_bpb": 1.220686,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.04 with WD thresh 0.78",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 278,
+      "commit": "e278_scalar_lr_0.22",
+      "val_bpb": 1.220936,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.22 with WD thresh 0.78 softcap 9",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 279,
+      "commit": "e279_warmdown_0.55",
+      "val_bpb": 1.220663,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.55",
+      "phase": "Phase 10: Final Optimization",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 280,
+      "commit": "e280_rope_8000",
+      "val_bpb": 1.219996,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "RoPE base 10000→8000 (close)",
+      "phase": "Phase 10: Final Optimization",
+      "category": "RoPE",
+      "is_best": false
+    },
+    {
+      "index": 281,
+      "commit": "e281_rope_12000",
+      "val_bpb": 1.2259,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "RoPE base 10000→12000",
+      "phase": "Phase 10: Final Optimization",
+      "category": "RoPE",
+      "is_best": false
+    },
+    {
+      "index": 282,
+      "commit": "e282_wd_0.06_v2",
+      "val_bpb": 1.220813,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.06 with WD thresh 0.78",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 283,
+      "commit": "e283_unembed_lr_0.003",
+      "val_bpb": 1.227813,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "UNEMBEDDING_LR 0.004→0.003 with WD thresh 0.78",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 284,
+      "commit": "e284_wd_0.04",
+      "val_bpb": 1.223222,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.04 with WD thresh 0.78",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 285,
+      "commit": "e285_pe_norm_1.05_v2",
+      "val_bpb": 1.223374,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "PE norm 1.06→1.05 with WD thresh 0.78",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 286,
+      "commit": "e286_no_cautious_mask",
+      "val_bpb": 1.221104,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "remove cautious WD mask",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 287,
+      "commit": "e287_no_dmodel_scale",
+      "val_bpb": 1.230046,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "remove dmodel LR scale",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 288,
+      "commit": "e288_momentum_ramp",
+      "val_bpb": 1.220067,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon momentum 0.84→0.86 ramp",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 289,
+      "commit": "e289_wd_thresh_0.76",
+      "val_bpb": 1.221419,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD threshold 0.78→0.76",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 290,
+      "commit": "e290_wd_linear_ramp",
+      "val_bpb": 1.220993,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD linear ramp from 0→0.05 at 78%",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 291,
+      "commit": "e291_muon_beta2_0.96",
+      "val_bpb": 1.219433,
+      "memory_gb": 2.2,
+      "status": "NEW BEST",
+      "description": "muon beta2 0.95→0.96 with WD thresh 0.78",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": true
+    },
+    {
+      "index": 292,
+      "commit": "e292_muon_beta2_0.97",
+      "val_bpb": 1.220298,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon beta2 0.96→0.97",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 293,
+      "commit": "e293_muon_beta2_0.94",
+      "val_bpb": 1.223152,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon beta2 0.96→0.94",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 294,
+      "commit": "e294_mlr_0.042_v3",
+      "val_bpb": 1.222714,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.042 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 295,
+      "commit": "e295_softcap_9.5",
+      "val_bpb": 1.222083,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "softcap 9→9.5 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 296,
+      "commit": "e296_embed_lr_0.55_v2",
+      "val_bpb": 1.222355,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.55 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 297,
+      "commit": "e297_embed_lr_0.65",
+      "val_bpb": 1.220773,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "EMBEDDING_LR 0.6→0.65 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 298,
+      "commit": "e298_momentum_0.86_v2",
+      "val_bpb": 1.220935,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon momentum 0.85→0.86 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 299,
+      "commit": "e299_scalar_lr_0.25",
+      "val_bpb": 1.224417,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.25 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 300,
+      "commit": "e300_wd_thresh_0.79",
+      "val_bpb": 1.220468,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WD threshold 0.78→0.79 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 301,
+      "commit": "e301_unembed_lr_0.0045",
+      "val_bpb": 1.222361,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "UNEMBEDDING_LR 0.004→0.0045 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 302,
+      "commit": "e302_warmdown_0.55_v2",
+      "val_bpb": 1.221339,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.55 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 303,
+      "commit": "e303_final_lr_0.025",
+      "val_bpb": 1.22126,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.025 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 304,
+      "commit": "e304_layer_dep_x0",
+      "val_bpb": 1.220583,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "layer-dependent x0_lambdas init",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 305,
+      "commit": "e305_pe_norm_1.04",
+      "val_bpb": 1.222837,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "PE norm 1.06→1.04 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 306,
+      "commit": "e306_momentum_0.84_v2",
+      "val_bpb": 1.223236,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon momentum 0.85→0.84 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 307,
+      "commit": "e307_softcap_8.5",
+      "val_bpb": 1.220407,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "softcap 9→8.5 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 308,
+      "commit": "e308_mlr_0.041_slr_0.19",
+      "val_bpb": 1.220483,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR=0.041 SCALAR_LR=0.19 combo",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 309,
+      "commit": "e309_wd_0.055_v2",
+      "val_bpb": 1.22292,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.055 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 310,
+      "commit": "e310_adam_beta2_0.96",
+      "val_bpb": 1.223065,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "ADAM_BETAS beta2 0.95→0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 311,
+      "commit": "e311_mlr_0.039_v3",
+      "val_bpb": 1.219837,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.039 with beta2=0.96 (close)",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 312,
+      "commit": "e312_ns_steps_4_v2",
+      "val_bpb": 1.22295,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "ns_steps 5→4 with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 313,
+      "commit": "e313_embed_0.65_mlr_0.039",
+      "val_bpb": 1.219798,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "EMBEDDING_LR=0.65 MATRIX_LR=0.039 combo",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 314,
+      "commit": "e314_x0_0.15_v2",
+      "val_bpb": 1.221104,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "x0_lambdas init 0.1→0.15 with new config",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 315,
+      "commit": "e315_scalar_lr_0.15",
+      "val_bpb": 1.2211,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.15",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 316,
+      "commit": "e316_device_batch_32_v2",
+      "val_bpb": 1.246467,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "DEVICE_BATCH_SIZE 16→32 (retest)",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Batch Size",
+      "is_best": false
+    },
+    {
+      "index": 317,
+      "commit": "e317_wte_init_1.2",
+      "val_bpb": 1.222449,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "wte init std 1.0→1.2",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 318,
+      "commit": "e318_lm_head_init_0.002",
+      "val_bpb": 1.220745,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "lm_head init std 0.001→0.002",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Initialization",
+      "is_best": false
+    },
+    {
+      "index": 319,
+      "commit": "e319_softcap_8_retest",
+      "val_bpb": 1.221498,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "softcap 9→8 retest with beta2=0.96",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Adam)",
+      "is_best": false
+    },
+    {
+      "index": 320,
+      "commit": "e320_final_lr_0.035",
+      "val_bpb": 1.219685,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.035 (very close)",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 321,
+      "commit": "e321_lr_shift_combo",
+      "val_bpb": 1.223822,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "EMBEDDING_LR=0.55 UNEMBEDDING_LR=0.005 combo",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Embedding)",
+      "is_best": false
+    },
+    {
+      "index": 322,
+      "commit": "e322_final_lr_0.028",
+      "val_bpb": 1.219825,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.03→0.028 (close)",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    },
+    {
+      "index": 323,
+      "commit": "e323_mlr_0.041_alone",
+      "val_bpb": 1.221088,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "MATRIX_LR 0.040→0.041 alone",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Matrix)",
+      "is_best": false
+    },
+    {
+      "index": 324,
+      "commit": "e324_scalar_lr_0.18_v2",
+      "val_bpb": 1.219475,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "SCALAR_LR 0.2→0.18 (within noise)",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Scalar)",
+      "is_best": false
+    },
+    {
+      "index": 325,
+      "commit": "e325_wd_0.045",
+      "val_bpb": 1.220663,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WEIGHT_DECAY 0.05→0.045",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Weight Decay",
+      "is_best": false
+    },
+    {
+      "index": 326,
+      "commit": "e326_layernorm",
+      "val_bpb": 1.224945,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "norm: RMSNorm→LayerNorm",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Architecture",
+      "is_best": false
+    },
+    {
+      "index": 327,
+      "commit": "e327_ve_last_only",
+      "val_bpb": 1.253479,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "VE only last layer",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Value Embedding",
+      "is_best": false
+    },
+    {
+      "index": 328,
+      "commit": "e328_warmdown_0.48",
+      "val_bpb": 1.220246,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "WARMDOWN_RATIO 0.5→0.48",
+      "phase": "Phase 10: Final Optimization",
+      "category": "LR Schedule",
+      "is_best": false
+    },
+    {
+      "index": 329,
+      "commit": "e329_muon_beta2_0.955",
+      "val_bpb": 1.219251,
+      "memory_gb": 2.2,
+      "status": "NEW BEST",
+      "description": "muon beta2 0.96→0.955",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": true
+    },
+    {
+      "index": 330,
+      "commit": "e330_muon_beta2_0.953",
+      "val_bpb": 1.223102,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon beta2 0.955→0.953",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 331,
+      "commit": "e331_muon_beta2_0.957",
+      "val_bpb": 1.22161,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "muon beta2 0.955→0.957",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Optimizer (Muon)",
+      "is_best": false
+    },
+    {
+      "index": 332,
+      "commit": "e332_final_lr_0.035_b955",
+      "val_bpb": 1.218771,
+      "memory_gb": 2.2,
+      "status": "NEW BEST",
+      "description": "FINAL_LR_FRAC 0.03→0.035 with beta2=0.955",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": true
+    },
+    {
+      "index": 333,
+      "commit": "e333_final_lr_0.04",
+      "val_bpb": 1.223222,
+      "memory_gb": 2.2,
+      "status": "worse",
+      "description": "FINAL_LR_FRAC 0.035→0.04 with beta2=0.955",
+      "phase": "Phase 10: Final Optimization",
+      "category": "Learning Rate (Other)",
+      "is_best": false
+    }
+  ]
+}

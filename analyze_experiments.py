@@ -5,6 +5,7 @@ Parses results.tsv and git history, generates charts and HTML report.
 """
 
 import csv
+import json
 import os
 import re
 import subprocess
@@ -56,79 +57,113 @@ def parse_results(filepath):
     current_best = None
     best_history = []
 
+    def _parse_row_fields(fields):
+        if len(fields) < 5:
+            return None
+        commit = fields[0].strip()
+        val_str = fields[1].strip()
+        mem_str = fields[2].strip()
+        status = fields[3].strip()
+        desc = fields[4].strip()
+        # Concatenated rows: desc ends with commit hash, extra fields follow
+        if len(fields) > 5:
+            hash_match = re.search(r"([a-f0-9]{7})$", desc)
+            if hash_match and len(fields) >= 9:
+                desc = desc[: -len(hash_match.group(1))].strip()
+                return (commit, val_str, mem_str, status, desc)
+        return (commit, val_str, mem_str, status, desc)
+
     with open(filepath, "r") as f:
         reader = csv.reader(f, delimiter="\t")
         header = next(reader)
         for i, row in enumerate(reader):
             if len(row) < 5:
                 continue
-            commit = row[0].strip()
-            val_str = row[1].strip()
-            mem_str = row[2].strip()
-            status = row[3].strip()
-            desc = row[4].strip()
 
-            # Parse val_bpb
-            val_bpb = None
-            if val_str.upper() == "CRASH" or val_str == "0.000000":
-                if val_str == "0.000000":
-                    val_bpb = 0.0
-                status = "crash"
+            rows_to_parse = []
+            if len(row) == 5:
+                rows_to_parse = [row]
+            elif len(row) >= 9:
+                # Two experiments merged into one line (missing newline in TSV)
+                rows_to_parse = [row[:5], row[5:]]
+                if len(row[5:]) < 5:
+                    desc = row[4].strip()
+                    hash_m = re.search(r"([a-f0-9]{7})$", desc)
+                    if hash_m:
+                        row[4] = desc[: -len(hash_m.group(1))].strip()
+                    rows_to_parse = [row[:5]]
+                    print(
+                        f"  ⚠ Line {i + 2}: row has {len(row)} fields, "
+                        f"partial merge detected — second experiment data incomplete"
+                    )
             else:
-                try:
-                    val_bpb = float(val_str)
-                except ValueError:
+                rows_to_parse = [row[:5]]
+
+            for row_fields in rows_to_parse:
+                parsed = _parse_row_fields(row_fields)
+                if parsed is None:
+                    continue
+                commit, val_str, mem_str, status, desc = parsed
+
+                val_bpb = None
+                if val_str.upper() == "CRASH" or val_str == "0.000000":
+                    if val_str == "0.000000":
+                        val_bpb = 0.0
                     status = "crash"
+                else:
+                    try:
+                        val_bpb = float(val_str)
+                    except ValueError:
+                        status = "crash"
 
-            # Parse memory
-            memory_gb = None
-            try:
-                memory_gb = float(mem_str)
-            except ValueError:
-                pass
+                memory_gb = None
+                try:
+                    memory_gb = float(mem_str)
+                except ValueError:
+                    pass
 
-            if i == 0 and baseline_val_bpb is None:
-                baseline_val_bpb = val_bpb
+                if len(experiments) == 0 and baseline_val_bpb is None:
+                    baseline_val_bpb = val_bpb
 
-            is_timeout = False
-            is_oom = False
-            lost_steps = False
-            steps_count = None
+                is_timeout = False
+                is_oom = False
+                lost_steps = False
+                steps_count = None
 
-            desc_lower = desc.lower()
-            if any(kw in desc_lower for kw in ["lost steps", "lost ", " steps)"]):
-                lost_steps = True
-            steps_m = re.search(r"\((\d+)\s+steps", desc_lower)
-            if not steps_m:
-                steps_m = re.search(r"(\d+)\s+steps\s+vs", desc_lower)
-            if steps_m:
-                steps_count = int(steps_m.group(1))
+                desc_lower = desc.lower()
+                if any(kw in desc_lower for kw in ["lost steps", "lost ", " steps)"]):
+                    lost_steps = True
+                steps_m = re.search(r"\((\d+)\s+steps", desc_lower)
+                if not steps_m:
+                    steps_m = re.search(r"(\d+)\s+steps\s+vs", desc_lower)
+                if steps_m:
+                    steps_count = int(steps_m.group(1))
 
-            if memory_gb is not None and memory_gb > 10.0 and status == "discard":
-                is_oom = True
+                if memory_gb is not None and memory_gb > 10.0 and status == "discard":
+                    is_oom = True
 
-            is_best = False
-            if status not in ("crash",) and val_bpb is not None and val_bpb > 0:
-                if current_best is None or val_bpb < current_best:
-                    current_best = val_bpb
-                    is_best = True
+                is_best = False
+                if status not in ("crash",) and val_bpb is not None and val_bpb > 0:
+                    if current_best is None or val_bpb < current_best:
+                        current_best = val_bpb
+                        is_best = True
 
-            best_history.append(current_best)
+                best_history.append(current_best)
 
-            exp = Experiment(
-                index=i,
-                commit=commit,
-                val_bpb=val_bpb,
-                memory_gb=memory_gb,
-                status=status,
-                description=desc,
-                is_best=is_best,
-                is_timeout=is_timeout,
-                is_oom=is_oom,
-                lost_steps=lost_steps,
-                steps_count=steps_count,
-            )
-            experiments.append(exp)
+                exp = Experiment(
+                    index=len(experiments),
+                    commit=commit,
+                    val_bpb=val_bpb,
+                    memory_gb=memory_gb,
+                    status=status,
+                    description=desc,
+                    is_best=is_best,
+                    is_timeout=is_timeout,
+                    is_oom=is_oom,
+                    lost_steps=lost_steps,
+                    steps_count=steps_count,
+                )
+                experiments.append(exp)
 
     return experiments, baseline_val_bpb, best_history
 
@@ -750,38 +785,13 @@ def generate_phase_progress(experiments):
 def generate_lr_sensitivity(experiments):
     fig, axes = plt.subplots(2, 2, figsize=(16, 11))
 
+    lr_extracted = _extract_lr_sensitivity_data(experiments)
     lr_types = {
-        "Matrix LR": [],
-        "Scalar LR": [],
-        "Embedding LR": [],
-        "Unembedding LR": [],
+        "Matrix LR": lr_extracted["matrix_lr"],
+        "Scalar LR": lr_extracted["scalar_lr"],
+        "Embedding LR": lr_extracted["embedding_lr"],
+        "Unembedding LR": lr_extracted["unembedding_lr"],
     }
-
-    for exp in experiments:
-        if not exp.val_bpb or exp.val_bpb <= 0 or exp.status == "crash":
-            continue
-        desc = exp.description.lower()
-        is_best = exp.is_best or exp.status == "NEW BEST"
-
-        m = re.search(r"(?:^|(?<=\s))matrix[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
-        if m:
-            lr_types["Matrix LR"].append((float(m.group(1)), exp.val_bpb, is_best))
-
-        m = re.search(r"(?:^|(?<=\s))scalar[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
-        if m:
-            lr_types["Scalar LR"].append((float(m.group(1)), exp.val_bpb, is_best))
-
-        if "unembedding" in desc:
-            m = re.search(r"unembedding[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
-            if m:
-                lr_types["Unembedding LR"].append(
-                    (float(m.group(1)), exp.val_bpb, is_best)
-                )
-                continue
-
-        m = re.search(r"(?:^|(?<=\s))embedding[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
-        if m:
-            lr_types["Embedding LR"].append((float(m.group(1)), exp.val_bpb, is_best))
 
     for ax, (lr_name, data) in zip(axes.flat, lr_types.items()):
         if not data:
@@ -797,10 +807,9 @@ def generate_lr_sensitivity(experiments):
             ax.set_title(f"{lr_name}", fontsize=12, fontweight="bold", color="#2c3e50")
             continue
 
-        data.sort(key=lambda x: x[0])
-        lrs = [d[0] for d in data]
-        bpbs = [d[1] for d in data]
-        is_best_list = [d[2] for d in data]
+        lrs = [d["value"] for d in data]
+        bpbs = [d["val_bpb"] for d in data]
+        is_best_list = [d["is_best"] for d in data]
 
         colors = ["#2ecc71" if b else "#3498db" for b in is_best_list]
         sizes = [80 if b else 30 for b in is_best_list]
@@ -864,25 +873,11 @@ def generate_lr_sensitivity(experiments):
 def generate_weight_decay_chart(experiments):
     fig, ax = plt.subplots(figsize=(13, 7))
 
-    wd_data = []
-    for exp in experiments:
-        if not exp.val_bpb or exp.val_bpb <= 0 or exp.status == "crash":
-            continue
-        desc = exp.description.lower()
-        if not (
-            "weight decay" in desc or "wd=" in desc or "wd_" in desc or "wd " in desc
-        ):
-            continue
-        wd_val = None
-        m = re.search(r"(?:weight.?decay|wd)[\s_=]+(\d+\.?\d*)", desc)
-        if m:
-            wd_val = float(m.group(1))
-            if wd_val > 1.0:
-                wd_val = wd_val / 100.0
-        if wd_val is not None:
-            wd_data.append(
-                (wd_val, exp.val_bpb, exp.is_best or exp.status == "NEW BEST")
-            )
+    wd_data = _extract_param_sensitivity(
+        experiments,
+        ["weight decay", "wd=", "wd_", "wd "],
+        r"(?:weight.?decay|wd)[\s_=]+(\d+\.?\d*)",
+    )
 
     if not wd_data:
         ax.text(
@@ -890,21 +885,19 @@ def generate_weight_decay_chart(experiments):
         )
         return chart_to_base64(fig)
 
-    wd_data.sort(key=lambda x: x[0])
-
     from collections import OrderedDict
 
     grouped = OrderedDict()
-    for wd_val, bpb, is_b in wd_data:
-        key = round(wd_val, 3)
-        grouped.setdefault(key, []).append((wd_val, bpb, is_b))
+    for item in wd_data:
+        key = round(item["value"], 3)
+        grouped.setdefault(key, []).append(item)
 
     positions = list(range(len(grouped)))
     labels = list(grouped.keys())
 
     for pos, (wd_val, items) in enumerate(zip(labels, grouped.values())):
-        bpbs = [it[1] for it in items]
-        any_best = any(it[2] for it in items)
+        bpbs = [it["val_bpb"] for it in items]
+        any_best = any(it["is_best"] for it in items)
         jitter = np.random.default_rng(42).uniform(-0.15, 0.15, len(bpbs))
         color = "#2ecc71" if any_best else "#e74c3c"
         ax.scatter(
@@ -938,7 +931,7 @@ def generate_weight_decay_chart(experiments):
     )
 
     ax.axhline(
-        y=min(d[1] for d in wd_data),
+        y=min(d["val_bpb"] for d in wd_data),
         color="#27ae60",
         linestyle=":",
         linewidth=1,
@@ -951,19 +944,11 @@ def generate_weight_decay_chart(experiments):
 def generate_softcap_chart(experiments):
     fig, ax = plt.subplots(figsize=(12, 7))
 
-    sc_data = []
-    for exp in experiments:
-        if not exp.val_bpb or exp.val_bpb <= 0 or exp.status == "crash":
-            continue
-        desc = exp.description.lower()
-        if "softcap" not in desc:
-            continue
-        m = re.search(r"softcap[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
-        if m:
-            sc_val = float(m.group(1))
-            sc_data.append(
-                (sc_val, exp.val_bpb, exp.is_best or exp.status == "NEW BEST")
-            )
+    sc_data = _extract_param_sensitivity(
+        experiments,
+        ["softcap"],
+        r"softcap[\s_=]+(?:0\.|)(\d+\.?\d*)",
+    )
 
     if not sc_data:
         ax.text(0.5, 0.5, "No softcap data found", ha="center", transform=ax.transAxes)
@@ -972,17 +957,17 @@ def generate_softcap_chart(experiments):
     from collections import OrderedDict
 
     grouped = OrderedDict()
-    for sc_val, bpb, is_b in sorted(sc_data, key=lambda x: x[0]):
-        key = round(sc_val, 1)
-        grouped.setdefault(key, []).append((sc_val, bpb, is_b))
+    for item in sc_data:
+        key = round(item["value"], 1)
+        grouped.setdefault(key, []).append(item)
 
     positions = list(range(len(grouped)))
     labels = list(grouped.keys())
     rng = np.random.default_rng(42)
 
     for pos, (sc_val, items) in enumerate(zip(labels, grouped.values())):
-        bpbs = [it[1] for it in items]
-        any_best = any(it[2] for it in items)
+        bpbs = [it["val_bpb"] for it in items]
+        any_best = any(it["is_best"] for it in items)
         jitter = rng.uniform(-0.18, 0.18, len(bpbs))
         color = "#2ecc71" if any_best else "#e74c3c"
         ax.scatter(
@@ -1020,21 +1005,7 @@ def generate_softcap_chart(experiments):
 def generate_momentum_chart(experiments):
     fig, ax = plt.subplots(figsize=(12, 7))
 
-    mom_data = []
-    for exp in experiments:
-        if not exp.val_bpb or exp.val_bpb <= 0 or exp.status == "crash":
-            continue
-        desc = exp.description.lower()
-        if "momentum" not in desc:
-            continue
-        m = re.search(
-            r"momentum[\s_]+(?:end\s+|start\s+|constant\s+|ramp\s+)?(?:0\.)(\d+)", desc
-        )
-        if m:
-            mom_val = float("0." + m.group(1))
-            mom_data.append(
-                (mom_val, exp.val_bpb, exp.is_best or exp.status == "NEW BEST")
-            )
+    mom_data = _extract_momentum_data(experiments)
 
     if not mom_data:
         ax.text(0.5, 0.5, "No momentum data found", ha="center", transform=ax.transAxes)
@@ -1043,17 +1014,17 @@ def generate_momentum_chart(experiments):
     from collections import OrderedDict
 
     grouped = OrderedDict()
-    for mom_val, bpb, is_b in sorted(mom_data, key=lambda x: x[0]):
-        key = round(mom_val, 2)
-        grouped.setdefault(key, []).append((mom_val, bpb, is_b))
+    for item in mom_data:
+        key = round(item["value"], 2)
+        grouped.setdefault(key, []).append(item)
 
     positions = list(range(len(grouped)))
     labels = list(grouped.keys())
     rng = np.random.default_rng(42)
 
     for pos, (mom_val, items) in enumerate(zip(labels, grouped.values())):
-        bpbs = [it[1] for it in items]
-        any_best = any(it[2] for it in items)
+        bpbs = [it["val_bpb"] for it in items]
+        any_best = any(it["is_best"] for it in items)
         jitter = rng.uniform(-0.18, 0.18, len(bpbs))
         color = "#2ecc71" if any_best else "#e74c3c"
         ax.scatter(
@@ -1121,54 +1092,6 @@ def generate_status_distribution(stats):
         bbox_to_anchor=(0.5, -0.05),
     )
     _apply_style(ax, "Overall Experiment Outcomes")
-
-    return chart_to_base64(fig)
-
-
-def generate_cumulative_improvement(experiments, best_history, baseline_val_bpb):
-    fig, ax = plt.subplots(figsize=(16, 6))
-
-    improvements = [
-        (baseline_val_bpb - bh) / baseline_val_bpb * 100 for bh in best_history
-    ]
-
-    ax.fill_between(range(len(improvements)), improvements, alpha=0.2, color="#27ae60")
-    ax.plot(range(len(improvements)), improvements, color="#27ae60", linewidth=2)
-
-    _apply_style(
-        ax,
-        "Cumulative BPB Improvement Over Experiments",
-        "Experiment #",
-        "Improvement from Baseline (%)",
-    )
-    ax.yaxis.set_major_formatter(ticker.FormatStrFormatter("%.2f%%"))
-
-    step_changes = []
-    current_best = baseline_val_bpb
-    for i, exp in enumerate(experiments):
-        if (
-            exp.val_bpb
-            and exp.val_bpb > 0
-            and exp.val_bpb < current_best
-            and exp.status != "crash"
-        ):
-            current_best = exp.val_bpb
-            step_changes.append((i, exp.description[:50]))
-
-    for idx, desc in step_changes[:12]:
-        y_val = improvements[idx]
-        ax.plot(idx, y_val, "o", color="#27ae60", markersize=5, zorder=5)
-        if y_val > 0.5:
-            ax.annotate(
-                desc[:35],
-                xy=(idx, y_val),
-                xytext=(5, 8),
-                textcoords="offset points",
-                fontsize=6.5,
-                alpha=0.8,
-                color="#2c3e50",
-                rotation=0,
-            )
 
     return chart_to_base64(fig)
 
@@ -1255,9 +1178,230 @@ def extract_milestones(experiments, baseline_val_bpb):
     return milestones
 
 
-# ============================================================
-# HTML Report Generation
-# ============================================================
+def _extract_lr_sensitivity_data(experiments):
+    lr_types = {
+        "matrix_lr": [],
+        "scalar_lr": [],
+        "embedding_lr": [],
+        "unembedding_lr": [],
+    }
+    for exp in experiments:
+        if not exp.val_bpb or exp.val_bpb <= 0 or exp.status == "crash":
+            continue
+        desc = exp.description.lower()
+        is_best = exp.is_best or exp.status == "NEW BEST"
+
+        m = re.search(r"(?:^|(?<=\s))matrix[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
+        if m:
+            lr_types["matrix_lr"].append(
+                {"value": float(m.group(1)), "val_bpb": exp.val_bpb, "is_best": is_best}
+            )
+
+        m = re.search(r"(?:^|(?<=\s))scalar[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
+        if m:
+            lr_types["scalar_lr"].append(
+                {"value": float(m.group(1)), "val_bpb": exp.val_bpb, "is_best": is_best}
+            )
+
+        if "unembedding" in desc:
+            m = re.search(r"unembedding[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
+            if m:
+                lr_types["unembedding_lr"].append(
+                    {
+                        "value": float(m.group(1)),
+                        "val_bpb": exp.val_bpb,
+                        "is_best": is_best,
+                    }
+                )
+                continue
+
+        m = re.search(r"(?:^|(?<=\s))embedding[_ ]lr[\s_=]+(?:0\.|)(\d+\.?\d*)", desc)
+        if m:
+            lr_types["embedding_lr"].append(
+                {"value": float(m.group(1)), "val_bpb": exp.val_bpb, "is_best": is_best}
+            )
+
+    for key in lr_types:
+        lr_types[key].sort(key=lambda x: x["value"])
+    return lr_types
+
+
+def _extract_param_sensitivity(experiments, keyword_patterns, value_pattern):
+    data = []
+    for exp in experiments:
+        if not exp.val_bpb or exp.val_bpb <= 0 or exp.status == "crash":
+            continue
+        desc = exp.description.lower()
+        if not any(k in desc for k in keyword_patterns):
+            continue
+        m = re.search(value_pattern, desc)
+        if not m:
+            continue
+        val = float(m.group(1))
+        if val > 1.0 and any(k in keyword_patterns for k in ["weight decay", "wd="]):
+            val = val / 100.0
+        data.append(
+            {
+                "value": val,
+                "val_bpb": exp.val_bpb,
+                "is_best": exp.is_best or exp.status == "NEW BEST",
+            }
+        )
+    data.sort(key=lambda x: x["value"])
+    return data
+
+
+def export_chart_data(
+    experiments,
+    stats,
+    milestones,
+    best_history,
+    baseline_val_bpb,
+    start_date="",
+    end_date="",
+    duration_str="",
+):
+    data = {
+        "meta": {
+            "total_experiments": stats["total"],
+            "baseline_val_bpb": baseline_val_bpb,
+            "best_val_bpb": stats["best_val_bpb"],
+            "improvement_pct": round(stats["improvement_from_baseline"], 4),
+            "improved": stats["improved"],
+            "worse": stats["worse"],
+            "crashes": stats["crashes"],
+            "start_date": start_date[:19] if start_date else None,
+            "end_date": end_date[:19] if end_date else None,
+            "duration": duration_str or None,
+        },
+        "progress": [
+            {
+                "index": i,
+                "running_best": round(best_history[i], 6),
+                "improvement_pct": round(
+                    (baseline_val_bpb - best_history[i]) / baseline_val_bpb * 100, 4
+                ),
+            }
+            for i in range(len(best_history))
+        ],
+        "categories": {
+            cat: {
+                "total": cstat["total"],
+                "improved": cstat["improved"],
+                "worse": cstat["worse"],
+                "crash": cstat["crash"],
+                "new_best": cstat["best"],
+                "success_rate": round(cstat["improved"] / cstat["total"] * 100, 1)
+                if cstat["total"] > 0
+                else 0,
+            }
+            for cat, cstat in sorted(
+                stats["category_stats"].items(), key=lambda x: -x[1]["total"]
+            )
+            if cstat["total"] > 0
+        },
+        "phases": _build_phases_data(experiments, stats),
+        "lr_sensitivity": _extract_lr_sensitivity_data(experiments),
+        "weight_decay": _extract_param_sensitivity(
+            experiments,
+            ["weight decay", "wd=", "wd_", "wd "],
+            r"(?:weight.?decay|wd)[\s_=]+(\d+\.?\d*)",
+        ),
+        "softcap": _extract_param_sensitivity(
+            experiments,
+            ["softcap"],
+            r"softcap[\s_=]+(?:0\.|)(\d+\.?\d*)",
+        ),
+        "momentum": _extract_momentum_data(experiments),
+        "milestones": [
+            {
+                "index": m["index"],
+                "commit": m["commit"],
+                "val_bpb": m["val_bpb"],
+                "description": m["description"],
+                "step_improvement_pct": round(m["step_improvement"], 4),
+                "total_improvement_pct": round(m["total_improvement"], 4),
+            }
+            for m in milestones
+        ],
+        "experiments": [
+            {
+                "index": exp.index,
+                "commit": exp.commit,
+                "val_bpb": exp.val_bpb,
+                "memory_gb": exp.memory_gb,
+                "status": exp.status,
+                "description": exp.description,
+                "phase": exp.phase,
+                "category": exp.category,
+                "is_best": exp.is_best,
+            }
+            for exp in experiments
+        ],
+    }
+    return data
+
+
+def _build_phases_data(experiments, stats):
+    phase_bests = {}
+    for exp in experiments:
+        if exp.val_bpb and exp.val_bpb > 0 and exp.status != "crash":
+            if exp.phase not in phase_bests or exp.val_bpb < phase_bests[exp.phase]:
+                phase_bests[exp.phase] = exp.val_bpb
+
+    phases_order = [
+        "Phase 1: Initial Exploration",
+        "Phase 2: Foundational HP Search",
+        "Phase 3: Momentum & WD Optimization",
+        "Phase 4: Fine-Grained Grid Search",
+        "Phase 5: Weight Tying",
+        "Phase 6: QK Norm & Softcap Deep Dive",
+        "Phase 7: Systematic Re-testing",
+        "Phase 8: Advanced Techniques",
+        "Phase 9: WD Scheduling Discovery",
+        "Phase 10: Final Optimization",
+    ]
+    result = {}
+    for phase in phases_order:
+        if phase not in stats["phase_stats"]:
+            continue
+        pstat = stats["phase_stats"][phase]
+        if pstat["total"] == 0:
+            continue
+        result[phase] = {
+            "total": pstat["total"],
+            "improved": pstat["improved"],
+            "worse": pstat["worse"],
+            "crash": pstat["crash"],
+            "success_rate": round(pstat["improved"] / pstat["total"] * 100, 1)
+            if pstat["total"] > 0
+            else 0,
+            "best_val_bpb": round(phase_bests.get(phase, 0), 6),
+        }
+    return result
+
+
+def _extract_momentum_data(experiments):
+    data = []
+    for exp in experiments:
+        if not exp.val_bpb or exp.val_bpb <= 0 or exp.status == "crash":
+            continue
+        desc = exp.description.lower()
+        if "momentum" not in desc:
+            continue
+        m = re.search(
+            r"momentum[\s_]+(?:end\s+|start\s+|constant\s+|ramp\s+)?(?:0\.)(\d+)", desc
+        )
+        if m:
+            data.append(
+                {
+                    "value": float("0." + m.group(1)),
+                    "val_bpb": exp.val_bpb,
+                    "is_best": exp.is_best or exp.status == "NEW BEST",
+                }
+            )
+    data.sort(key=lambda x: x["value"])
+    return data
 
 
 def parse_git_history(repo_path, start_commit="e23b26d"):
@@ -1289,6 +1433,47 @@ def parse_git_history(repo_path, start_commit="e23b26d"):
         return []
 
 
+def get_commit_date(repo_path, commit_ref):
+    """Get the author date of a specific commit."""
+    try:
+        result = subprocess.run(
+            ["git", "show", "-s", "--format=%ai", commit_ref],
+            capture_output=True,
+            text=True,
+            cwd=repo_path,
+            timeout=10,
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+        return None
+    except Exception:
+        return None
+
+
+def format_duration(start_str, end_str):
+    """Parse two git date strings and return a human-readable duration."""
+    from datetime import datetime
+
+    try:
+        start_dt = datetime.strptime(start_str[:19], "%Y-%m-%d %H:%M:%S")
+        end_dt = datetime.strptime(end_str[:19], "%Y-%m-%d %H:%M:%S")
+        total_seconds = int((end_dt - start_dt).total_seconds())
+        if total_seconds < 0:
+            return ""
+        days, remainder = divmod(total_seconds, 86400)
+        hours, remainder = divmod(remainder, 3600)
+        minutes, _ = divmod(remainder, 60)
+        parts = []
+        if days > 0:
+            parts.append(f"{days} 天")
+        if hours > 0:
+            parts.append(f"{hours} 小时")
+        parts.append(f"{minutes} 分钟")
+        return " ".join(parts)
+    except (ValueError, TypeError):
+        return ""
+
+
 def generate_git_section(commits):
     if not commits:
         return "<p><em>无法从git仓库读取提交记录</em></p>"
@@ -1310,9 +1495,16 @@ def generate_git_section(commits):
 
 
 def generate_html_report(
-    experiments, stats, milestones, charts, baseline_val_bpb, git_commits
+    experiments,
+    stats,
+    milestones,
+    charts,
+    baseline_val_bpb,
+    git_commits,
+    start_date="",
+    end_date="",
+    duration_str="",
 ):
-    """Generate the full HTML report."""
 
     git_section = generate_git_section(git_commits)
 
@@ -1462,6 +1654,23 @@ def generate_html_report(
         .stat-card.crash .value {{ color: #e67e22; }}
         .stat-card.improvement .value {{ color: #2980b9; }}
 
+        .time-banner {{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 22px 30px;
+            margin: 15px 0 25px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }}
+        .time-banner .time-item {{ text-align: center; }}
+        .time-banner .time-center {{ flex: 1.5; }}
+        .time-banner .time-value {{ font-size: 1.4em; font-weight: bold; }}
+        .time-banner .time-center .time-value {{ font-size: 1.7em; }}
+        .time-banner .time-label {{ font-size: 0.85em; opacity: 0.85; margin-top: 4px; }}
+
         .chart-container {{
             background: white;
             border-radius: 10px;
@@ -1604,8 +1813,27 @@ def generate_html_report(
     <div class="container">
         <h1>🔬 AutoResearch 实验分析报告</h1>
         <p style="color: #7f8c8d; margin-bottom: 20px;">
-            基于 results.tsv 的 {stats["total"]} 轮实验完整分析 | 基线 Val BPB: {baseline_val_bpb:.6f} → 最终最佳: {stats["best_val_bpb"]:.6f}
+            基于 results.tsv 的 {stats["total"]} 轮实验完整分析 | 基线 Val BPB: {
+        baseline_val_bpb:.6f} → 最终最佳: {stats["best_val_bpb"]:.6f}
         </p>
+        {
+        f'''<div class="time-banner">
+            <div class="time-item">
+                <div class="time-value">{start_date[:16] if start_date else "—"}</div>
+                <div class="time-label">🕐 实验开始</div>
+            </div>
+            <div class="time-item time-center">
+                <div class="time-value">{duration_str or "—"}</div>
+                <div class="time-label">⏱️ 总运行时长</div>
+            </div>
+            <div class="time-item">
+                <div class="time-value">{end_date[:16] if end_date else "—"}</div>
+                <div class="time-label">🏁 实验结束</div>
+            </div>
+        </div>'''
+        if start_date or end_date
+        else ""
+    }
 
         <!-- ==================== Summary ==================== -->
         <h2 id="summary">📊 总体概览</h2>
@@ -1616,11 +1844,7 @@ def generate_html_report(
             </div>
             <div class="stat-card best">
                 <div class="value">{stats["new_best"]}</div>
-                <div class="label">新纪录次数</div>
-            </div>
-            <div class="stat-card improvement">
-                <div class="value">{stats["improved"]}</div>
-                <div class="label">改善/保留</div>
+                <div class="label">改善次数</div>
             </div>
             <div class="stat-card">
                 <div class="value" style="color: #e74c3c">{stats["worse"]}</div>
@@ -1638,14 +1862,12 @@ def generate_html_report(
                 <div class="value">{stats["best_val_bpb"]:.6f}</div>
                 <div class="label">最佳 Val BPB</div>
             </div>
-            <div class="stat-card">
-                <div class="value">{stats["improved"] / stats["total"] * 100:.1f}%</div>
-                <div class="label">成功率</div>
-            </div>
         </div>
 
         <div class="chart-container">
-            <img src="data:image/png;base64,{charts["status_distribution"]}" alt="Status Distribution">
+            <img src="data:image/png;base64,{
+        charts["status_distribution"]
+    }" alt="Status Distribution">
         </div>
 
         <!-- ==================== Progress ==================== -->
@@ -1654,7 +1876,9 @@ def generate_html_report(
             <img src="data:image/png;base64,{charts["progress"]}" alt="Progress Chart">
         </div>
         <div class="chart-container">
-            <img src="data:image/png;base64,{charts["cumulative"]}" alt="Cumulative Improvement">
+            <img src="data:image/png;base64,{
+        charts["cumulative"]
+    }" alt="Cumulative Improvement">
         </div>
 
         <div class="phase-timeline">
@@ -1668,7 +1892,8 @@ def generate_html_report(
             </div>
             <div class="phase-item">
                 <h4>🏆 最终成果</h4>
-                <p>Val BPB从 {baseline_val_bpb:.6f} 降至 {stats["best_val_bpb"]:.6f}，改善 {stats["improvement_from_baseline"]:.2f}%</p>
+                <p>Val BPB从 {baseline_val_bpb:.6f} 降至 {
+        stats["best_val_bpb"]:.6f}，改善 {stats["improvement_from_baseline"]:.2f}%</p>
             </div>
         </div>
 
@@ -1694,10 +1919,14 @@ def generate_html_report(
         <!-- ==================== Categories ==================== -->
         <h2 id="categories">📂 超参数分类分析</h2>
         <div class="chart-container">
-            <img src="data:image/png;base64,{charts["category_pie"]}" alt="Category Distribution">
+            <img src="data:image/png;base64,{
+        charts["category_pie"]
+    }" alt="Category Distribution">
         </div>
         <div class="chart-container">
-            <img src="data:image/png;base64,{charts["success_rate"]}" alt="Success Rate by Category">
+            <img src="data:image/png;base64,{
+        charts["success_rate"]
+    }" alt="Success Rate by Category">
         </div>
 
         <table>
@@ -1722,7 +1951,9 @@ def generate_html_report(
         <p>根据实验内容的时间顺序和主题，将333轮实验分为以下阶段：</p>
 
         <div class="chart-container">
-            <img src="data:image/png;base64,{charts["phase_progress"]}" alt="Phase Progress">
+            <img src="data:image/png;base64,{
+        charts["phase_progress"]
+    }" alt="Phase Progress">
         </div>
 
         <table>
@@ -1785,7 +2016,9 @@ def generate_html_report(
         <!-- ==================== Sensitivity ==================== -->
         <h2 id="sensitivity">🎯 超参数敏感性分析</h2>
         <div class="chart-container">
-            <img src="data:image/png;base64,{charts["lr_sensitivity"]}" alt="LR Sensitivity">
+            <img src="data:image/png;base64,{
+        charts["lr_sensitivity"]
+    }" alt="LR Sensitivity">
         </div>
         <div class="chart-container">
             <img src="data:image/png;base64,{charts["wd_chart"]}" alt="Weight Decay">
@@ -1968,7 +2201,9 @@ def generate_html_report(
 
         <!-- ==================== Non-improving Experiments ==================== -->
         <h2 id="nonimproving">❌ 未改善实验深度分析</h2>
-        <p>共有 <strong>{stats["worse"]}</strong> 轮实验未能改善目标。以下按类别分析未改善的主要原因：</p>
+        <p>共有 <strong>{
+        stats["worse"]
+    }</strong> 轮实验未能改善目标。以下按类别分析未改善的主要原因：</p>
 
         <div class="theory-card">
             <h3>未改善实验的常见原因分类</h3>
@@ -2058,7 +2293,9 @@ def generate_html_report(
         </table>
 
         <div class="footer">
-            <p>AutoResearch 实验分析报告 | 生成于 2026-04-17 | 共 {stats["total"]} 轮实验</p>
+            <p>AutoResearch 实验分析报告 | 生成于 2026-04-17 | 共 {
+        stats["total"]
+    } 轮实验</p>
         </div>
     </div>
 
@@ -2138,17 +2375,29 @@ def main():
     print("  ✓ Cumulative improvement")
 
     print("Generating HTML report...")
-    git_commits = parse_git_history(
-        os.path.dirname(os.path.abspath(__file__)), "e23b26d"
-    )
+    repo_path = os.path.dirname(os.path.abspath(__file__))
+    git_commits = parse_git_history(repo_path, "e23b26d")
     print(f"  Parsed {len(git_commits)} git commits from repository")
-    html = generate_html_report(
-        experiments, stats, milestones, charts, baseline_val_bpb, git_commits
+
+    start_date = get_commit_date(repo_path, "e23b26d")
+    end_date = get_commit_date(repo_path, "HEAD")
+    duration_str = (
+        format_duration(start_date, end_date) if start_date and end_date else ""
     )
-    print(f"  Parsed {len(git_commits)} git commits from repository")
-    git_section = generate_git_section(git_commits)
+    print(
+        f"  Time range: {start_date[:19] if start_date else '?'} → {end_date[:19] if end_date else '?'} ({duration_str})"
+    )
+
     html = generate_html_report(
-        experiments, stats, milestones, charts, baseline_val_bpb, git_commits
+        experiments,
+        stats,
+        milestones,
+        charts,
+        baseline_val_bpb,
+        git_commits,
+        start_date=start_date or "",
+        end_date=end_date or "",
+        duration_str=duration_str,
     )
 
     output_path = os.path.join(
@@ -2157,7 +2406,25 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
 
+    print("Exporting chart data to JSON...")
+    chart_data = export_chart_data(
+        experiments,
+        stats,
+        milestones,
+        best_history,
+        baseline_val_bpb,
+        start_date=start_date or "",
+        end_date=end_date or "",
+        duration_str=duration_str,
+    )
+    json_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "experiment_data.json"
+    )
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(chart_data, f, ensure_ascii=False, indent=2)
+
     print(f"\n✅ Report generated: {output_path}")
+    print(f"   Chart data exported: {json_path}")
     print(f"   Total experiments: {stats['total']}")
     print(f"   New best count: {stats['new_best']}")
     print(f"   Improved/kept: {stats['improved']}")
